@@ -1,6 +1,7 @@
 homeRender();
 
-document.querySelector(".home").onclick = function(){  
+document.querySelector(".home").onclick = function(event){  
+    event.preventDefault();
     document.querySelector(".home").id ='activeA';
     document.querySelector(".experience").id ='';
     document.querySelector(".portfolio").id ='';
@@ -8,7 +9,8 @@ document.querySelector(".home").onclick = function(){
     homeRender();
 } ;
 
-document.querySelector(".experience").onclick = function(){
+document.querySelector(".experience").onclick = function(event){
+    event.preventDefault();
     document.querySelector(".home").id ='';
     document.querySelector(".experience").id ='activeE';
     document.querySelector(".portfolio").id ='';
@@ -17,7 +19,8 @@ document.querySelector(".experience").onclick = function(){
 
 } ;
 
-document.querySelector(".portfolio").onclick = function(){
+document.querySelector(".portfolio").onclick = function(event){
+    event.preventDefault();
     document.querySelector(".home").id ='';
     document.querySelector(".experience").id ='';
     document.querySelector(".portfolio").id ='activeR';
