@@ -21,19 +21,19 @@ realisationsRender = function(){
         
         <section id="home_portfolio" class="portfolio_choose">
 			
-			<a href="/portfolio/gaming/" class="portfolioType portfolio_student">
+			<a href="/" class="portfolioType portfolio_student">
 			<span class="portfolioIcon"></span>
 			<span class="title">Réalisations étudiantes</span>
 			<span class="desc">Réalisations de DUT et Licence</span>
             </a>
             
-            <a href="/portfolio/professional/" class="portfolioType portfolio_professional">
+            <a href="/" class="portfolioType portfolio_professional">
 			<span class="portfolioIcon"></span>
 			<span class="title">Réalisations profesionnels</span>
 			<span class="desc"> Réalisations suite à mes expériences en etreprise </span>
             </a>
 
-            <a href="/portfolio/personnel/" class="portfolioType portfolio_personnal">
+            <a href="/" class="portfolioType portfolio_personnal">
 			<span class="portfolioIcon"></span>
 			<span class="title">Réalisations personnels</span>
 			<span class="desc"> En cours ... </span>
