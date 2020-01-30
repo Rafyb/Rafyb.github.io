@@ -53,7 +53,7 @@ homeRender = function(){
         </section>
 
         <section id="home_autres">
-            <h1>A venir</h1>
+            <h1>Mes Compétences</h1>
 
             <p>Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
                 iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset,

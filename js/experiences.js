@@ -26,9 +26,12 @@ experiencesRender = function(){
                 <ul>
                 <li><span></span>
                     <div>
-                    <div class="title">Développement et correction d'un Jeu en 2DISO</div>
+                    <div class="title">Développement d'un système de Jeu en 2D isométrique</div>
                     <div class="info">Vacataire 6 mois</div>
-                    <div class="type">Presentation</div>
+                    <div class="type">Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset,
+                    quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino,
+                    humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis</div>
                     <div class="img"></div>
                     </div> <span class="number"><span>Jui<br>2020</span> <span>Déc 2019</span></span>
                 </li>
@@ -36,7 +39,10 @@ experiencesRender = function(){
                     <div><span></span>
                     <div class="title">Développement d'un mode multijoueurs en ligne</div>
                     <div class="info">CDD 1 mois</div>
-                    <div class="type">Presentation</div>
+                    <div class="type">Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset,
+                    quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino,
+                    humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis</div>
                     <div class="img"></div>
                     </div> <span class="number"><span>Aout 2019</span><span>Jui<br>2019</span></span>
                 </li>
@@ -44,7 +50,10 @@ experiencesRender = function(){
                     <div><span></span>
                     <div class="title">Stage</div>
                     <div class="info">Stage 3 mois</div>
-                    <div class="type">Review</div>
+                    <div class="type">Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset,
+                    quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino,
+                    humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis</div>
                     <div class="img"></div>
                     </div> <span class="number"><span>Jui<br>2019</span> <span>Avril 2019</span></span>
                 </li>
