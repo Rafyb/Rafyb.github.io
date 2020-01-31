@@ -1,10 +1,10 @@
-if(screen.width < 816){
+if(!(screen.width < 816)){
   document.querySelector('#mainBody').innerHTML = `
     <h1> Cette page n'est pas encore disponible sur smartphone </h1>
-    <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto;" >
+    <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
   `;
-  document.querySelector('footer').innerHTML ='';
-  document.querySelector('.icon-bar').innerHTML ='';
+  document.querySelector('footer').style.display ='none';
+  document.querySelector('.icon-bar').style.display ='none';
 
 } else {
 
