@@ -47,6 +47,7 @@ header #logo span{
     mix-blend-mode: screen; 
     color: black;
     font-weight: bold;
+    padding: 4px;
 }
 
 header #logo a {
