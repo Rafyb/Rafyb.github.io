@@ -40,7 +40,7 @@ homeRender = function(){
                     <div><span></span>
                     <div class="title">Bac STI2D - options SIN</div>
                     <div class="info">Bac Sciences et Technologies de l'Industrie et du Développement Durable <br>Système de l'Information et du Numérique</div>
-                    <div class="utils"><a href="http://www.iut-a.univ-lille.fr/dut-info/">Contenu de la formation</a></div>
+                    <div class="utils"><a href="https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique">Contenu de la formation</a></div>
                     <div class="type">Présentation</div>
                     <div class="img"><a href="https://saintremi.fr/"><img src="assets/stremi.png" ></a></div>
                     </div> <span class="number"><span>2017</span> <span>2015</span></span>
