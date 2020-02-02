@@ -42,12 +42,11 @@ header nav {
     margin-right: -4px;
 }
 
-header #logo {
-    width: 350px;
-    float: left;
-    margin: 0 12px 10px 12px;
-    text-shadow: 0px 5px 5px rgb(65, 65, 65);
-    color: #ffffff;
+header #logo span{
+    background-color: white;
+    mix-blend-mode: screen; 
+    color: black;
+    font-weight: bold;
 }
 
 header #logo a {
@@ -57,6 +56,15 @@ header #logo a {
     font-size: 45px;
     font-style : arial;
 }
+
+header #logo {
+    width: 350px;
+    float: left;
+    margin: 0 12px 10px 12px;
+    text-shadow: 0px 5px 5px rgb(65, 65, 65);
+    color: #ffffff;
+}
+
 
 header nav ul {
     margin: 0;

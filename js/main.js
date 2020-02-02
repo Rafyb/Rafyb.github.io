@@ -19,15 +19,7 @@ if(screen.width < 816){
       homeRender();
   } ;
 
-  document.querySelector(".experience").onclick = function(event){
-      event.preventDefault();
-      document.querySelector(".home").id ='';
-      document.querySelector(".experience").id ='activeE';
-      document.querySelector(".portfolio").id ='';
-      document.querySelector("#mydivheader").style.backgroundColor = "#04912e" ;
-      experiencesRender();
-
-  } ;
+  document.querySelector(".experience").onclick = experienceLaunch;
 
   document.querySelector(".portfolio").onclick = function(event){
       console.log(event);
@@ -37,6 +29,8 @@ if(screen.width < 816){
       document.querySelector(".portfolio").id ='activeR';
       document.querySelector("#mydivheader").style.backgroundColor = "#c76912" ;
       realisationsRender();
+
+    document.querySelector(".portfolio_professional").onclick = experienceLaunch;
 
   } ;
 
@@ -48,6 +42,14 @@ if(screen.width < 816){
 
   dragElement(document.getElementById("mydiv"));
 
+  function experienceLaunch(event){
+    event.preventDefault();
+    document.querySelector(".home").id ='';
+    document.querySelector(".experience").id ='activeE';
+    document.querySelector(".portfolio").id ='';
+    document.querySelector("#mydivheader").style.backgroundColor = "#04912e" ;
+    experiencesRender();
+  }
   function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "header")) {
