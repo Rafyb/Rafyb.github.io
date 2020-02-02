@@ -1,16 +1,45 @@
 loadPage = function(){
 
   if(screen.width < 816){
+
     document.querySelector('#mainBody').innerHTML = `
       <h1> Cette page n'est pas encore disponible sur smartphone </h1>
       <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
     `;
     document.querySelector('footer').style.display ='none';
     document.querySelector('.icon-bar').style.display ='none';
+    document.body.style.background ='';
   
   } else {
-  
+
+    document.querySelector('#mainBody').innerHTML = `
+    <header>
+    <div id="logo">
+      <a href="/">Raphael Bauvin</a>
+      <span>Web Apps & Games Developer</span>
+    </div>
+    <nav>
+      <ul>
+                  <li class="home" id="activeA" ><a href="/">Accueil</a></li>
+                  <li class="experience " ><a href="/">Mon Expérience</a></li>
+        <li class="portfolio " ><a href="/">Mes Réalisations</a></li>
+        
+      </ul>
+      <div class="clearer"></div>
+    </nav>
+    <div class="clearer"></div>
+      </header>
+
+      <div id="mydiv">
+          <div id="mydivheader">webcat.png</div>
+          <img src="assets/webcat.jpg" width="200" height="150">
+      </div>
+    <div id="mainContent"></div>`;
+
     homeRender();
+
+    document.querySelector('footer').style.display ='';
+    document.querySelector('.icon-bar').style.display ='';
   
     document.querySelector(".home").onclick = function(event){  
         event.preventDefault();
