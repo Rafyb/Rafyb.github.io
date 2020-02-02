@@ -118,13 +118,12 @@ header nav ul li a:hover{
 
 h1{
     font-size: 32px;
-font-weight: normal;
-text-align: center;
-color:
-#333;
-padding-top: 20px;
-border-top: 1px dashed#ccc;
-text-shadow: 0px 1px 1px#fff;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+    border-top: 1px dashed#ccc;
+    text-shadow: 0px 1px 1px#fff;
 }
 
 
@@ -157,7 +156,7 @@ text-shadow: 0px 1px 1px#fff;
     transition: all 0.5s linear;
 }
 
-.portfolio_choose .portfolioType:hover {
+.portfolioType:hover {
     background-color: #f78d2b;
 }
 
@@ -181,6 +180,35 @@ text-shadow: 0px 1px 1px#fff;
     height: 230px;
     width: 330px;
 }
+
+
+/* ---- W3SCHOOLS HOW TO TUTORIAL ---- */
+
+
+
+.label {
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+  .success {background-color: #4CAF50;} /* Green */
+  .phaser {background-color: rgb(20, 108, 180);} /* Blue */
+  .chartjs {background-color: #ff6384;} /* Blue */
+  .warning {background-color: #ff9800;} /* Orange */
+  .danger {background-color: #f44336;} /* Red */
+  .other {background-color: #e7e7e7; color: black;} /* Gray */
+  .javascript{background-color: #f2dd2d; color:black;}
+  .webservice{background-color: #f98113;}
+
+
+
+
+
+
 
 .icon-bar {
     position: fixed;

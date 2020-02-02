@@ -37,6 +37,7 @@
   .timeline ul li:not(:first-child) {
     margin-top: 60px;
   }
+
   .timeline ul li > span {
     width: 5px;
     height: 100%;
@@ -69,8 +70,19 @@
   }
 
   .timeline div .type{
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .timeline div a{
+    text-decoration: none;
     margin-top: 10px;
     font-size: 16px;
+    color:#0768a0;
+  }
+
+  .timeline div a:hover{
+    color:#86b7e7;
   }
 
   
@@ -78,6 +90,7 @@
     font-weight: 300;
     font-size : 16px;
     font-style : italic;
+    margin-bottom: 10px;
   }
 
   .timeline div .img {
