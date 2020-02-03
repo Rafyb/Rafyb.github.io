@@ -1,48 +1,14 @@
-
-document.querySelector('#mainBody').innerHTML = `
-    <header>
-    <div id="logo">
-      <a href="/">Raphael Bauvin</a>
-      <span>Web Apps & Games Developer</span>
-    </div>
-    <nav>
-      <ul>
-                  <li class="home" id="activeA" ><a href="/">Accueil</a></li>
-                  <li class="experience " ><a href="/">Mon Expérience</a></li>
-        <li class="portfolio " ><a href="/">Mes Réalisations</a></li>
-        
-      </ul>
-      <div class="clearer"></div>
-    </nav>
-    <div class="clearer"></div>
-      </header>
-
-      <div id="mydiv">
-          <div id="mydivheader">webcat.png</div>
-          <img src="assets/webcat.jpg" width="200" height="150">
-      </div>
-    <div id="mainContent"></div>`;
-
 homeRender();
   
 document.querySelector(".home").onclick = function(event){  
         event.preventDefault();
-        document.querySelector(".home").id ='activeA';
-        document.querySelector(".experience").id ='';
-        document.querySelector(".portfolio").id ='';
-        document.querySelector("#mydivheader").style.backgroundColor = "#0768a0" ;
         homeRender();
 } ;
   
 document.querySelector(".experience").onclick = experienceLaunch;
   
 document.querySelector(".portfolio").onclick = function(event){
-        console.log(event);
         event.preventDefault();
-        document.querySelector(".home").id ='';
-        document.querySelector(".experience").id ='';
-        document.querySelector(".portfolio").id ='activeR';
-        document.querySelector("#mydivheader").style.backgroundColor = "#c76912" ;
         realisationsRender();
   
       document.querySelector(".portfolio_professional").onclick = experienceLaunch;
@@ -59,10 +25,6 @@ dragElement(document.getElementById("mydiv"));
   
 function experienceLaunch(event){
       event.preventDefault();
-      document.querySelector(".home").id ='';
-      document.querySelector(".experience").id ='activeE';
-      document.querySelector(".portfolio").id ='';
-      document.querySelector("#mydivheader").style.backgroundColor = "#04912e" ;
       experiencesRender();
 }
     

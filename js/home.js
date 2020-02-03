@@ -1,5 +1,10 @@
 homeRender = function(){
+    document.querySelector(".home").id ='activeA';
+    document.querySelector(".experience").id ='';
+    document.querySelector(".portfolio").id ='';
+    document.querySelector("#mydivheader").style.backgroundColor = "#0768a0" ;
     document.body.style.background = "#f8f8f8 url(assets/home_background.png) center -80px no-repeat"; 
+    
     document.querySelector('#mainContent').innerHTML = `
         <section id="home_intro">
             <h1>Pour commencer</h1>
@@ -39,7 +44,7 @@ homeRender = function(){
                 <li>
                     <div><span></span>
                     <div class="title">Bac STI2D - options SIN</div>
-                    <div class="info">Bac Sciences et Technologies de l'Industrie et du Développement Durable <br>Système de l'Information et du Numérique</div>
+                    <div class="info">Bac Sciences et Technologies de l'Industrie et du Développement Durable - Système de l'Information et du Numérique</div>
                     <div class="utils"><a href="https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique">Contenu de la formation</a></div>
                     <div class="type">Présentation</div>
                     <div class="img"><a href="https://saintremi.fr/"><img src="assets/stremi.png" ></a></div>

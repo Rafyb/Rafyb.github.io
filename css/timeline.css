@@ -67,6 +67,7 @@
   .timeline div .title{
     font-weight: 600;
     font-size: 20px;
+    width:80%;
   }
 
   .timeline div .type{
@@ -91,6 +92,7 @@
     font-size : 16px;
     font-style : italic;
     margin-bottom: 10px;
+    width:80%;
   }
 
   .timeline div .img {

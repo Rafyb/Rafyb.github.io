@@ -1,4 +1,8 @@
 experiencesRender = function(){
+    document.querySelector(".home").id ='';
+    document.querySelector(".experience").id ='activeE';
+    document.querySelector(".portfolio").id ='';
+    document.querySelector("#mydivheader").style.backgroundColor = "#04912e" ;
     document.body.style.background = "#f8f8f8 url(assets/Berdeghem_V6.png) center -80px no-repeat"; 
     // (Groupe pour l’Innovation, la Valorisation et la Réflexion sur les Enseignements)
     document.querySelector('#mainContent').innerHTML = `
@@ -25,7 +29,7 @@ experiencesRender = function(){
                 <ul>
                 <li><span></span>
                     <div>
-                    <div class="title">Développement d'un système de Jeu en 2D isométrique</div>
+                    <div class="title">Développement d'un système de Jeu en 2D isométrique </div>
                     <div class="info">Vacataire 6 mois </div>
                     <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 3</span></a> </div>
                     <div class="type">Présentation<br>
@@ -53,7 +57,7 @@ experiencesRender = function(){
                 </li>
                 <li>
                     <div><span></span>
-                    <div class="title">Intégration de graphiques interactifs et responsives de<br> visualisation de données sur Moodle </div>
+                    <div class="title">Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle </div>
                     <div class="info">Stage 3 mois </div>
                     <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="/"><span class="label webservice">WebService</span></a> <a href="https://www.chartjs.org/"><span class="label chartjs">ChartJS</span> </a> </div>
                     <div class="type">Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de 

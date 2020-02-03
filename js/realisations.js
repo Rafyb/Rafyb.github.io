@@ -1,4 +1,8 @@
 realisationsRender = function(){
+    document.querySelector(".home").id ='';
+    document.querySelector(".experience").id ='';
+    document.querySelector(".portfolio").id ='activeR';
+    document.querySelector("#mydivheader").style.backgroundColor = "#c76912" ;
     document.body.style.background = "#f8f8f8 url(assets/realisations.png) center -80px no-repeat"; 
     document.querySelector('#mainContent').innerHTML = `
         <section id="home_intro">
@@ -21,22 +25,16 @@ realisationsRender = function(){
         
         <section id="home_portfolio" class="portfolio_choose">
 			
-			<a href="/" class="portfolioType portfolio_student">
+			<a href="realisations.html" class="portfolioType portfolio_student">
 			<span class="portfolioIcon"></span>
-			<span class="title">Réalisations étudiantes</span>
-			<span class="desc">Réalisations de DUT et Licence</span>
+			<span class="title">Accès à toutes les réalisations</span>
+			<span class="desc">(Redirection vers la pages des réalisations)</span>
             </a>
             
             <a href="/" class="portfolioType portfolio_professional">
 			<span class="portfolioIcon"></span>
 			<span class="title">Réalisations profesionnels</span>
 			<span class="desc"> Réalisations suite à mes expériences en etreprise </span>
-            </a>
-
-            <a href="/" class="portfolioType portfolio_personnal">
-			<span class="portfolioIcon"></span>
-			<span class="title">Réalisations personnels</span>
-			<span class="desc"> En cours ... </span>
             </a>
             
         <div class="clearer"></div>
