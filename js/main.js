@@ -11,7 +11,8 @@ loadPage = function(){
     document.body.style.background ='';
   
   } else {
-
+    //screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+    //screen.lockOrientationUniversal("landscape-primary");
     document.querySelector('#mainBody').innerHTML = `
     <header>
     <div id="logo">
