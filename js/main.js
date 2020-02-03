@@ -1,19 +1,5 @@
-loadPage = function(){
 
-  if(screen.width < 816){
-
-    document.querySelector('#mainBody').innerHTML = `
-      <h1> Cette page n'est pas encore disponible sur smartphone </h1>
-      <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
-    `;
-    document.querySelector('footer').style.display ='none';
-    document.querySelector('.icon-bar').style.display ='none';
-    document.body.style.background ='';
-  
-  } else {
-    //screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-    //screen.lockOrientationUniversal("landscape-primary");
-    document.querySelector('#mainBody').innerHTML = `
+document.querySelector('#mainBody').innerHTML = `
     <header>
     <div id="logo">
       <a href="/">Raphael Bauvin</a>
@@ -37,23 +23,20 @@ loadPage = function(){
       </div>
     <div id="mainContent"></div>`;
 
-    homeRender();
-
-    document.querySelector('footer').style.display ='';
-    document.querySelector('.icon-bar').style.display ='';
+homeRender();
   
-    document.querySelector(".home").onclick = function(event){  
+document.querySelector(".home").onclick = function(event){  
         event.preventDefault();
         document.querySelector(".home").id ='activeA';
         document.querySelector(".experience").id ='';
         document.querySelector(".portfolio").id ='';
         document.querySelector("#mydivheader").style.backgroundColor = "#0768a0" ;
         homeRender();
-    } ;
+} ;
   
-    document.querySelector(".experience").onclick = experienceLaunch;
+document.querySelector(".experience").onclick = experienceLaunch;
   
-    document.querySelector(".portfolio").onclick = function(event){
+document.querySelector(".portfolio").onclick = function(event){
         console.log(event);
         event.preventDefault();
         document.querySelector(".home").id ='';
@@ -64,25 +47,26 @@ loadPage = function(){
   
       document.querySelector(".portfolio_professional").onclick = experienceLaunch;
   
-    } ;
+};
   
-    document.getElementById("mydiv").style.display ="none";
+document.getElementById("mydiv").style.display ="none";
   
-    document.querySelector('.youtube').onclick = function(){
+document.querySelector('.youtube').onclick = function(){
         document.getElementById("mydiv").style.display ="block";
-    };
+};
   
-    dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("mydiv"));
   
-    function experienceLaunch(event){
+function experienceLaunch(event){
       event.preventDefault();
       document.querySelector(".home").id ='';
       document.querySelector(".experience").id ='activeE';
       document.querySelector(".portfolio").id ='';
       document.querySelector("#mydivheader").style.backgroundColor = "#04912e" ;
       experiencesRender();
-    }
-    function dragElement(elmnt) {
+}
+    
+function dragElement(elmnt) {
       var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
       if (document.getElementById(elmnt.id + "header")) {
         // if present, the header is where you move the DIV from:
@@ -121,12 +105,19 @@ loadPage = function(){
         document.onpointerup = null;
         document.onpointermove = null;
       }
-    }
-  }
-
 }
 
-loadPage();
-window.onresize = loadPage;
 
+window.onresize =  function(){
 
+  if(screen.width < 816){
+
+    document.querySelector('#mainBody').innerHTML = `
+      <h1> Cette page n'est pas encore disponible sur smartphone </h1>
+      <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
+    `;
+    document.querySelector('footer').style.display ='none';
+    document.querySelector('.icon-bar').style.display ='none';
+    document.body.style.background ='';
+  }
+};
