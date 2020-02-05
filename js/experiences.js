@@ -34,7 +34,7 @@ experiencesRender = function(){
                     <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 3</span></a> </div>
                     <div class="type">Présentation<br>
                     
-                    <img src="assets/ecaducee.jpg" style="width :50%; margin:auto; display:block" >
+                    <img src="assets/Carte2DMOSAIC_V2.png" style="width :90%; margin:10px; display:block" >
                     
                     </div>
                     <div class="img"><img src="assets/city_icone.png" ></div>
