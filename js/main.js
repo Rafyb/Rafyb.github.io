@@ -71,8 +71,8 @@ function dragElement(elmnt) {
 
 
 window.onload =  function(){
-  alert(window.screen.width * window.devicePixelRatio);
-  if(window.screen.width * window.devicePixelRatio < 816){
+  alert(window.devicePixelRatio);
+  if( window.devicePixelRatio > 1){
   
     document.querySelector('#mainBody').innerHTML = `
       <h1> Cette page n'est pas encore disponible sur smartphone </h1>
