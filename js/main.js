@@ -70,7 +70,7 @@ function dragElement(elmnt) {
 }
 
 
-window.onresize =  function(){
+window.onload =  function(){
 
   if(screen.width < 816){
   alert(screen.width);
