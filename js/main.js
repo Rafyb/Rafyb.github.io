@@ -71,9 +71,9 @@ function dragElement(elmnt) {
 
 
 window.onload =  function(){
-
-  if(screen.width < 816){
-  alert(screen.width);
+  alert(window.screen.width * window.devicePixelRatio);
+  if(window.screen.width * window.devicePixelRatio < 816){
+  
     document.querySelector('#mainBody').innerHTML = `
       <h1> Cette page n'est pas encore disponible sur smartphone </h1>
       <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
