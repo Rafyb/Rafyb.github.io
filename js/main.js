@@ -73,7 +73,7 @@ function dragElement(elmnt) {
 window.onresize =  function(){
 
   if(screen.width < 816){
-
+  alert(screen.width);
     document.querySelector('#mainBody').innerHTML = `
       <h1> Cette page n'est pas encore disponible sur smartphone </h1>
       <img src="assets/workingOn.gif" style=" margin-left: auto; margin-right: auto; display:block" >
