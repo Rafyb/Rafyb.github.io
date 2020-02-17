@@ -1,7 +1,7 @@
 # website-raphael
 
-## Nouveau site désormais en VueJs
-[Mon site web](https://raphael-bauvin.firebaseapp.com/#/) 
+## Nouveau site : désormais en VueJs
+See [Mon site web](https://raphael-bauvin.firebaseapp.com/#/) 
 
 ## Project setup
 ```
