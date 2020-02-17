@@ -1,0 +1,97 @@
+html,body{
+    height : 100%;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    overflow-y: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    max-height: 10%;
+}
+
+#logo{
+  padding:1%;
+  
+}
+
+#logo span{
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+#logo a{
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 0px;
+  color: rgb(46, 46, 46);
+  text-shadow: 0px 2px 2px rgb(65, 65, 65);
+}
+
+.main img{
+    width :50%;
+    margin:auto;
+    display:block;
+}
+
+.main {
+  margin-left: 20%;
+  overflow-y: auto;
+  height: 90%;
+  padding: 10px 20px;
+}
+
+.sidenav{
+  width:20%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:90%;
+}
+
+.sidenav a, .dropdown-btn {
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #363636;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container a{
+  font-size: 1.2em;
+  padding: 12px 8px 7px 30px;
+  
+}
+
+.dropdown-container a:hover{
+  background-color: rgb(131, 131, 131);
+  color:white;
+}
+
+.dropdown-container{
+  margin-bottom: 20px;
+}
+
+.dropdown-btn{
+  background-color: rgb(224, 224, 224);
+  padding: 6px 8px 6px 10px;
+  width:100%;
+}
+
+.fa-caret-down, .fa-caret-left{
+  float: right;
+}
+
+
+
