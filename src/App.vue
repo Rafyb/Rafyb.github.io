@@ -28,5 +28,16 @@ html,body{
     min-width: 380px;
     padding: 0 30px;
     margin: 0 auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+h1{
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    padding-top: 20px;
+    border-top: 1px dashed#ccc;
+    text-shadow: 0px 1px 1px#fff;
 }
 </style>
