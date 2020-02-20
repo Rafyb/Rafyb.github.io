@@ -6,7 +6,7 @@
             <div>
             <div class="title">{{time.title}}</div>
             <div class="info">{{time.info}}</div>
-            <div class="utils"><a :href="time.utils[0].text">{{time.utils[0].text}}</a></div>
+            <div class="utils"><a :href="time.utils[0].link">{{time.utils[0].text}}</a></div>
             <div class="type">{{time.desc}}</div>
             <div class="img"><a v-bind:href="time.img.link"><img v-bind:src="time.img.src"></a></div>
             </div> <span class="number"><span>{{time.dateFirst}}</span> <span>{{time.dateSecond}}</span></span>
