@@ -1,0 +1,43 @@
+<template>
+  <div class="experience">
+    <section id="experience_intro">
+      <h1>Le Givre</h1>
+
+      <p>J’ai eu l'occasion à plusieurs reprises de travailler au sein du groupe GIVRE ( Groupe pour l’Innovation, la Valorisation et la Réflexion sur les Enseignements ). 
+      Le groupe GIVRE est installé à la Faculté de Pharmacie qui fait partie de l’Université de Lille. Elle compte environ 
+      2 900 étudiants en formation initiale ou continue, 140 enseignants chercheurs, une centaine de personnels techniques et administratifs et 
+      14 équipes de recherche dont 8 labellisées INSERM et CNRS. Ce groupe est composé d’enseignants-chercheurs, d’une ingénieure TICE, ainsi que 
+      d’un pharmacien d'officine associé à la faculté. </p>
+
+      <a href="http://pharmacie.univ-lille.fr/innovations-pedagogiques/le-groupe-givre.html"><img :src="givreImg" style=" margin-left: auto; margin-right: auto; display:block" ></a>
+            
+      <p>Leur objectif est d’exploiter au mieux les supports numériques pour aider les étudiants dans leurs apprentissages à l’aide de supports 
+      de travail adaptatif (Learning Adaptive) et d’outil d’analyse des apprentissages (Learning Analytics).</p>
+      <br/>
+      <br/>
+      <timeline/>
+      
+    </section>
+  </div>
+</template>
+
+<script>
+import timeline from './timeline.vue';
+export default {
+  name: 'Experience',
+  components:{
+    timeline
+  },
+  data:function() {
+    return{
+      givreImg : require("@/assets/givre.png"),
+      
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+</style>

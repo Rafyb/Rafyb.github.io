@@ -1,5 +1,6 @@
 <template>
     <div class="timeline">
+        <div v-if="!vide">
         <ul>
             <li v-for="time in timeline" :key="time.id" ><span></span>
             <div>
@@ -11,6 +12,59 @@
             </div> <span class="number"><span>{{time.dateFirst}}</span> <span>{{time.dateSecond}}</span></span>
             </li>
         </ul>
+        </div>
+        <div v-if="vide">
+        <ul>
+            <li><span></span>
+                <div>
+                    <div class="title">Développement d'un système de Jeu en 2D isométrique </div>
+                    <div class="info">Vacataire 6 mois </div>
+                    <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 3</span></a> </div>
+                    <div class="type">Présentation<br>
+                    
+                    <img src="@/assets/Carte2DMOSAIC_V2.png" style="width :90%; margin:10px; display:block" >
+                    
+                </div>
+                <div class="img"><img src="@/assets/city_icone.png" ></div>
+                </div> <span class="number"><span>Jui<br>2020</span> <span>Déc 2019</span></span>
+            </li>
+            <li>
+                <div><span></span>
+                    <div class="title">Développement d'un mode multijoueurs en ligne</div>
+                    <div class="info">CDD 1 mois </div>
+                    <div> <a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 2</span></a> </div>
+                    <div class="type">Présentation<br>
+                    
+                    <img src="@/assets/creation.png" style="width :28%; margin:2%;   display:inline-block" >
+                    <img src="@/assets/rejoindre.png" style="width :28%; margin:2%;  display:inline-block" >
+                    <img src="@/assets/partie.png" style="width :28%; margin:2%;  display:inline-block" >
+                    
+                </div>
+                <div class="img"><img src="@/assets/multijoueurs_icone.png" ></div>
+                </div> <span class="number"><span>Aout 2019</span><span>Jui<br>2019</span></span>
+            </li>
+            <li>
+                <div><span></span>
+                    <div class="title">Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle </div>
+                    <div class="info">Stage 3 mois </div>
+                    <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="/"><span class="label webservice">WebService</span></a> <a href="https://www.chartjs.org/"><span class="label chartjs">ChartJS</span> </a> </div>
+                    <div class="type">Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de 
+                    diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques venant s’appliquer dans une application
+                    sur mobile développée par le groupe GIVRE.<br><br>
+                    Pour cela j'ai appri à utiliser l'API ChartJS ainsi que l'utilisation des WebServices de l'API Moodle. Durant ce stage j'ai été amenné
+                    à rechercher des solutions techniques et à apporter mes idées sur les données pouvant être utile aussi bien pour un enseignant que
+                    pour un étudiant. Ce fut aussi ma première occasion d'utiliser l'élément Canvas d'HTML 5 et de comprendre son fonctionnement.
+                    Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir 
+                    les méthodes de travail en entreprise. <br>
+
+                    <img src="@/assets/bar.jpg" style="width :39%; margin:5%; display:inline-block" >
+                    <img src="@/assets/radar.jpg" style="width :39%; margin:5%; display:inline-block" >
+                    </div>
+                    <div class="img"><img src="@/assets/chartjs-logo.png" ></div>
+                </div> <span class="number"><span>Jui<br>2019</span> <span>Avril 2019</span></span>
+            </li>
+        </ul>
+        </div>
     </div>
 </template>
 
@@ -19,12 +73,17 @@ export default {
   name: 'timeline',
   props:{
       timeline:Array
+  },
+  computed:{
+      vide(){
+          return this.timeline == undefined;
+      }
   }
 }
 </script>
 
-<style scoped>
-ul {
+<style>
+.timeline ul {
     margin: 0;
     list-style: none;
     position: relative;
@@ -32,7 +91,7 @@ ul {
     color: rgb(83, 83, 83);
     font-size: 13px;
 }
-ul:before {
+.timeline ul:before {
     content: "";
     width: 5px;
     height: 100%;
@@ -40,7 +99,7 @@ ul:before {
     position: absolute;
     border-left: 3px dashed rgb(56, 56, 56);
 }
-ul li {
+.timeline ul li {
     position: relative;
     margin-left: 30px;
     background-color: rgb(209, 209, 209);
@@ -51,15 +110,15 @@ ul li {
     transition: box-shadow .3s;
     color : #181818;
 }
-ul li:hover {
+.timeline ul li:hover {
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.411);
     background-color: rgb(49, 49, 49);
     color : #f8f8f8;
 }
-ul li:not(:first-child) {
+.timeline ul li:not(:first-child) {
     margin-top: 60px;
 }
-ul li > span {
+.timeline ul li > span {
     width: 5px;
     height: 100%;
     background: rgb(43, 43, 43);
@@ -67,7 +126,7 @@ ul li > span {
     position: absolute;
     left:-30px;
 }
-ul li > span:before, ul li > span:after {
+.timeline ul li > span:before, ul li > span:after {
     content: "";
     width: 16px;
     height: 16px;
@@ -78,45 +137,45 @@ ul li > span:before, ul li > span:after {
     left:-8px;
     top: 0;
 }
-ul li span:after {
+.timeline ul li span:after {
     top: 100%;
 }
-ul li > div {
+.timeline ul li > div {
     margin-left: 10px;
 }
-div .title{
+.timeline div .title{
     font-weight: 600;
     font-size: 20px;
     width:80%;
 }
-div .type{
+.timeline div .type{
     margin-top: 15px;
     font-size: 16px;
 }
-div a{
+.timeline div a{
     text-decoration: none;
     margin-top: 10px;
     font-size: 16px;
     color:#0768a0;
 }
-div a:hover{
+.timeline div a:hover{
     color:#86b7e7;
 }
-div .info {
+.timeline div .info {
     font-weight: 300;
     font-size : 16px;
     font-style : italic;
     margin-bottom: 10px;
     width:80%;
   }
-div .img {
+.timeline div .img {
     position: absolute;
     right: -5px;
     top: -50px;
     border-radius: 5px;
     background-color: #ffffffa8;
 }
-div > div {
+.timeline div > div {
     margin-top: 5px;
 }
 span.number {

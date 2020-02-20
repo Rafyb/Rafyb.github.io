@@ -6,11 +6,12 @@
 	</div>
 	<nav>
 		<ul>
-            <li class="home" ><router-link :to="'/'">Accueil</router-link></li>
-            <li class="experience " ><router-link :to="'/Experience'">Mon Expérience</router-link></li>
-            <li class="portfolio " ><router-link :to="'/Realisation'">Mes Réalisations</router-link></li>
+            <li id='activeA'><router-link :to="'/'">About me</router-link></li>
+            <li id='activeE'><router-link :to="'/Experience'" >Mon Expérience</router-link></li>
+            <li id='activeR'><router-link :to="'/Realisation'" >Mes Réalisations</router-link></li>
 		</ul>
 	</nav>
+    
   </div>
 </template>
 
@@ -18,16 +19,52 @@
 export default {
   name: 'navbar',
   props:{
-      actualPage:String
+    actualRoute:String
   },
-  computed:{
-      active(){
-          if(this.actualPage == 'home')
-            document.querySelector('.home').styles.backgroundColor='#0768a0';
-          //if(this.actualPage == 'expe')
+  data:function(){
+      return{
 
-          //if(this.actualPage == 'real')
-          return this.actualPage;
+      }
+  },
+  methods:{
+      real(){
+          let path = require('@/assets/realisations.png');
+          document.querySelector('body').style.background= `#f8f8f8 url('${path}') center -80px no-repeat`;
+          document.querySelector('#activeR a').style.backgroundColor = '#c76912';
+          document.querySelector('#activeR a').style.color = 'white'; 
+          
+      },
+      expe(){
+          let path = require('@/assets/Berdeghem_V6.png');
+          document.querySelector('body').style.background= `#f8f8f8 url('${path}') center -80px no-repeat`;
+          document.querySelector('#activeE a').style.backgroundColor = '#04912e';
+          document.querySelector('#activeE a').style.color = 'white'; 
+
+      },
+      acce(){
+          let path = require('@/assets/home_background.png');
+          document.querySelector('body').style.background= `#f8f8f8 url('${path}') center -80px no-repeat`;
+          document.querySelector('#activeA a').style.backgroundColor = '#0768a0';
+          document.querySelector('#activeA a').style.color = 'white'; 
+      },
+      uncolor(){
+          document.querySelector('#activeA a').style.backgroundColor = '#e7e7e7';
+          document.querySelector('#activeA a').style.color = 'black'; 
+          document.querySelector('#activeE a').style.backgroundColor = '#e7e7e7';
+          document.querySelector('#activeE a').style.color = 'black'; 
+          document.querySelector('#activeR a').style.backgroundColor = '#e7e7e7';
+          document.querySelector('#activeR a').style.color = 'black'; 
+      }
+  },
+  watch:{
+      actualRoute:{
+            //immediate: true, 
+            handler () {
+                this.uncolor();
+                if(this.actualRoute=="/") this.acce();
+                if(this.actualRoute=="/Experience") this.expe();
+                if(this.actualRoute=="/Realisation") this.real();
+            }
       }
   }
 }
@@ -35,6 +72,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 .navbar {
     display: block;
     height: 80px;
@@ -102,21 +141,5 @@ font-size : 16px;
 nav ul li a:hover{
     background-color: #ffffff;
 }
-
-/*
-header nav ul li#activeA a{
-    background-color: #0768a0; 
-    color: rgb(255, 255, 255);
-}
-
-header nav ul li#activeE a{
-    background-color: #04912e; 
-    color: rgb(255, 255, 255);
-}
-
-header nav ul li#activeR a{
-    background-color: #c76912; 
-    color: rgb(255, 255, 255);
-}*/
 
 </style>

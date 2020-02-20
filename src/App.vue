@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <navbar/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import navbar from './components/navbar.vue';
 export default {
-  name: 'App',
-  components:{
-    navbar
-  }
+  name: 'App'
 }
 </script>
 
@@ -23,21 +18,24 @@ html,body{
     padding: 0;
 }
 
-#app {
-    max-width: 800px;
-    min-width: 380px;
-    padding: 0 30px;
-    margin: 0 auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
-h1{
-    font-size: 32px;
-    font-weight: normal;
-    text-align: center;
-    color: #333;
-    padding-top: 20px;
-    border-top: 1px dashed#ccc;
-    text-shadow: 0px 1px 1px#fff;
-}
+/* -- Style of the labels -- */
+
+.label {
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+.success {background-color: #4CAF50;} /* Green */
+.phaser {background-color: rgb(20, 108, 180);} /* Blue */
+.chartjs {background-color: #ff6384;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */
+.other {background-color: #e7e7e7; color: black;} /* Gray */
+.javascript{background-color: #f2dd2d; color:black;}
+.webservice{background-color: #f98113;}
+
 </style>

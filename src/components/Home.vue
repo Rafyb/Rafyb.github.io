@@ -24,7 +24,7 @@
       humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis
       vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non
       modo nihil ignoscendum, sed etiam acriter est resistendum.</p>
-    </section>`
+    </section>
   </div>
 </template>
 
@@ -97,11 +97,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-body{
-  background: #f8f8f8 url('../assets/home_background.png') center -80px no-repeat;
-}
-#home_intro{
-  padding: 40px 0px;
-}
+<style scoped>
+
 </style>
