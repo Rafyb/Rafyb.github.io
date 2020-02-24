@@ -1,31 +1,45 @@
 <template>
   <div id="HomeP">
-    <navbar :actualRoute="currentPage"/>
-    <router-view/>
+    <navbar @changePage="pageChange"/>
+    <div v-if="page=='Home'">
+      <Home/>
+    </div>
+    <div v-if="page=='Expe'">
+      <Experience/>
+    </div>
+    <div v-if="page=='Real'">
+      <Realisation/>
+    </div>
     <webcat/>
     <stickybar/>
   </div>
 </template>
 
 <script>
-import navbar from '../components/navbar.vue';
-import stickybar from '../components/stickybar.vue';
-import webcat from '../components/webcat.vue';
+import navbar from '../components_home/navbar.vue';
+import Realisation from '../components_home/Realisation.vue';
+import Home from '../components_home/Home.vue';
+import Experience from '../components_home/Experience.vue';
+import stickybar from '../components_home/stickybar.vue';
+import webcat from '../components_home/webcat.vue';
 export default {
   name: 'HomeP',
   components:{
     navbar,
+    Realisation,
+    Home,
+    Experience,
     stickybar,
     webcat
   },
   data:function(){
     return{
-      page:this.$route.path
+      page:'Home'
     }
   },
-  computed:{
-    currentPage(){
-      return this.$route.path;
+  methods:{
+    pageChange:function(page){
+      this.page = page;
     }
   }
 }
