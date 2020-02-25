@@ -15,7 +15,7 @@
       de travail adaptatif (Learning Adaptive) et d’outil d’analyse des apprentissages (Learning Analytics).</p>
       <br/>
       <br/>
-      <timeline/>
+      <timeline :timeline="timeline"/>
       
     </section>
   </div>
@@ -31,7 +31,71 @@ export default {
   data:function() {
     return{
       givreImg : require("@/assets/givre.png"),
-      
+      timeline:[
+        {
+          id:1,
+          title:'Licence 3 - Sciences du Numérique ',
+          info:'Formation sur 1 an, Niveau BAC+3',
+          utils:
+            [{
+              link : "https://www.fges.fr/cursus-universitaire/licence-sts/informatique-et-sciences-du-numerique/",
+              text : 'Contenu de la formation'
+            }]
+          ,
+          desc:'<p>Presentation</p>',
+          img:{
+            link : "https://www.fges.fr/",
+            src : require('@/assets/fges_min.png')
+          },
+          dateFirst : '2020',
+          dateSecond : '2019'
+        },
+        {
+          id:2,
+          title:'DUT Informatique',
+          info:'Formation sur 2 ans, Niveau BAC+2',
+          utils:
+            [{
+              link : "http://www.iut-a.univ-lille.fr/dut-info/",
+              text : 'Contenu de la formation'
+            }],
+          desc:'Presentation',
+          img:{
+            link : "https://www.iut-a.univ-lille.fr/",
+            src : require('@/assets/iuta.png')
+          },
+          dateFirst : '2019',
+          dateSecond : '2017'
+        },
+        {
+          id:3,
+          title:'Bac STI2D - options SIN',
+          info:"Bac Sciences et Technologies de l'Industrie et du Développement Durable - Système de l'Information et du Numérique",
+          utils:
+            [{
+              link : "https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique",
+              text : 'Contenu de la formation'
+            }],
+          desc:`Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de 
+                    diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques venant s’appliquer dans une application
+                    sur mobile développée par le groupe GIVRE.<br><br>
+                    Pour cela j'ai appri à utiliser l'API ChartJS ainsi que l'utilisation des WebServices de l'API Moodle. Durant ce stage j'ai été amenné
+                    à rechercher des solutions techniques et à apporter mes idées sur les données pouvant être utile aussi bien pour un enseignant que
+                    pour un étudiant. Ce fut aussi ma première occasion d'utiliser l'élément Canvas d'HTML 5 et de comprendre son fonctionnement.
+                    Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir 
+                    les méthodes de travail en entreprise. <br>
+
+                    <img src="@/assets/bar.jpg" style="width :39%; margin:5%; display:inline-block" >
+                    <img src="@/assets/radar.jpg" style="width :39%; margin:5%; display:inline-block" >
+                    `,
+          img:{
+            link : "https://saintremi.fr/",
+            src : require('@/assets/stremi.png')
+          },
+          dateFirst : '2017',
+          dateSecond : '2015'
+        }
+      ]
     }
   }
 }

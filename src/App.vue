@@ -13,7 +13,7 @@ export default {
 <style>
 html,body{
     height : 100%;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ html,body{
     border-radius: 6px;
     font-size: 12px;
     font-weight: bold;
-  }
+}
 
   
 .success {background-color: #4CAF50;} /* Green */

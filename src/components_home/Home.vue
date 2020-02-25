@@ -48,7 +48,7 @@ export default {
               text : 'Contenu de la formation'
             }]
           ,
-          desc:'Presentation',
+          desc:'<p>Presentation</p>',
           img:{
             link : "https://www.fges.fr/",
             src : require('@/assets/fges_min.png')

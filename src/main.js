@@ -16,7 +16,7 @@ const router = new VueRouter({
     component: HomeP,
   },
   {
-    path:'/Realisation/',
+    path:'/Realisations/',
     component:RealisationP
   }]
 })

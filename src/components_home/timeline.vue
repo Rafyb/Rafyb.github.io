@@ -1,19 +1,17 @@
 <template>
     <div class="timeline">
-        <div v-if="!vide">
         <ul>
             <li v-for="time in timeline" :key="time.id" ><span></span>
             <div>
             <div class="title">{{time.title}}</div>
             <div class="info">{{time.info}}</div>
             <div class="utils"><a :href="time.utils[0].link">{{time.utils[0].text}}</a></div>
-            <div class="type">{{time.desc}}</div>
+            <div class="type" v-html="time.desc"></div>
             <div class="img"><a v-bind:href="time.img.link"><img v-bind:src="time.img.src"></a></div>
             </div> <span class="number"><span>{{time.dateFirst}}</span> <span>{{time.dateSecond}}</span></span>
             </li>
         </ul>
-        </div>
-        <div v-if="vide">
+       
         <ul>
             <li><span></span>
                 <div>
@@ -48,23 +46,11 @@
                     <div class="title">Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle </div>
                     <div class="info">Stage 3 mois </div>
                     <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="/"><span class="label webservice">WebService</span></a> <a href="https://www.chartjs.org/"><span class="label chartjs">ChartJS</span> </a> </div>
-                    <div class="type">Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de 
-                    diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques venant s’appliquer dans une application
-                    sur mobile développée par le groupe GIVRE.<br><br>
-                    Pour cela j'ai appri à utiliser l'API ChartJS ainsi que l'utilisation des WebServices de l'API Moodle. Durant ce stage j'ai été amenné
-                    à rechercher des solutions techniques et à apporter mes idées sur les données pouvant être utile aussi bien pour un enseignant que
-                    pour un étudiant. Ce fut aussi ma première occasion d'utiliser l'élément Canvas d'HTML 5 et de comprendre son fonctionnement.
-                    Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir 
-                    les méthodes de travail en entreprise. <br>
-
-                    <img src="@/assets/bar.jpg" style="width :39%; margin:5%; display:inline-block" >
-                    <img src="@/assets/radar.jpg" style="width :39%; margin:5%; display:inline-block" >
-                    </div>
+                    <div class="type"></div>
                     <div class="img"><img src="@/assets/chartjs-logo.png" ></div>
                 </div> <span class="number"><span>Jui<br>2019</span> <span>Avril 2019</span></span>
             </li>
         </ul>
-        </div>
     </div>
 </template>
 
