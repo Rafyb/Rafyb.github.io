@@ -49,7 +49,7 @@ export default {
               class : 'link'
             }]
           ,
-          desc:'<p>Presentation</p>',
+          desc:'',
           img:{
             link : "https://www.fges.fr/",
             src : require('@/assets/fges_min.png')
@@ -67,7 +67,7 @@ export default {
               text : 'Contenu de la formation',
               class : 'link'
             }],
-          desc:'Presentation',
+          desc:'',
           img:{
             link : "https://www.iut-a.univ-lille.fr/",
             src : require('@/assets/iuta.png')
@@ -85,7 +85,7 @@ export default {
               text : 'Contenu de la formation',
               class : 'link'
             }],
-          desc:'Presentation',
+          desc:'',
           img:{
             link : "https://saintremi.fr/",
             src : require('@/assets/stremi.png')
