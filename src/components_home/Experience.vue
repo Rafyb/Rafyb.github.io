@@ -34,47 +34,82 @@ export default {
       timeline:[
         {
           id:1,
-          title:'Licence 3 - Sciences du Numérique ',
-          info:'Formation sur 1 an, Niveau BAC+3',
+          title:"Développement d'un moteur de jeu 2D isométrique",
+          info:"Vacataire 6 mois",
           utils:
             [{
-              link : "https://www.fges.fr/cursus-universitaire/licence-sts/informatique-et-sciences-du-numerique/",
-              text : 'Contenu de la formation'
-            }]
-          ,
-          desc:'<p>Presentation</p>',
+              link : "",
+              text : 'JavaScript',
+              class : "label javascript"
+            },
+            {
+              link : "http://phaser.io/",
+              text : 'Phaser 3',
+              class : "label phaser"
+            }],
+          desc:`Présentation<br>
+                    
+                <img src="${require('@/assets/Carte2DMOSAIC_V2.png')}" style="width :90%; margin:10px; display:block" >
+                `,
           img:{
-            link : "https://www.fges.fr/",
-            src : require('@/assets/fges_min.png')
+            link : "",
+            src : require('@/assets/city_icone.png')
           },
-          dateFirst : '2020',
-          dateSecond : '2019'
+          dateFirst : 'Juil\n2020',
+          dateSecond : 'Déc\n2019'
         },
         {
           id:2,
-          title:'DUT Informatique',
-          info:'Formation sur 2 ans, Niveau BAC+2',
+          title:"Développement d'un mode multijoueurs en ligne",
+          info:"CDD 1 mois",
           utils:
             [{
-              link : "http://www.iut-a.univ-lille.fr/dut-info/",
-              text : 'Contenu de la formation'
+              link : "",
+              text : 'JavaScript',
+              class : "label javascript"
+            },
+            {
+              link : "",
+              text : 'WebService',
+              class : "label webservice"
+            },
+            {
+              link : "http://phaser.io/",
+              text : 'Phaser 2',
+              class : "label phaser"
             }],
-          desc:'Presentation',
+          desc:`Présentation<br>
+                    
+                <img src="${require('@/assets/creation.png')}" style="width :28%; margin:2%;   display:inline-block" >
+                <img src="${require('@/assets/rejoindre.png')}" style="width :28%; margin:2%;  display:inline-block" >
+                <img src="${require('@/assets/partie.png')}" style="width :28%; margin:2%;  display:inline-block" >
+                `,
           img:{
-            link : "https://www.iut-a.univ-lille.fr/",
-            src : require('@/assets/iuta.png')
+            link : "",
+            src : require('@/assets/multijoueurs_icone.png')
           },
-          dateFirst : '2019',
-          dateSecond : '2017'
+          dateFirst : 'Aout\n2019',
+          dateSecond : 'Juil\n2019'
         },
         {
           id:3,
-          title:'Bac STI2D - options SIN',
-          info:"Bac Sciences et Technologies de l'Industrie et du Développement Durable - Système de l'Information et du Numérique",
+          title:'Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle',
+          info:"Stage 3 mois",
           utils:
             [{
-              link : "https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique",
-              text : 'Contenu de la formation'
+              link : "",
+              text : 'JavaScript',
+              class : "label javascript"
+            },
+            {
+              link : "",
+              text : 'WebService',
+              class : "label webservice"
+            },
+            {
+              link : "https://www.chartjs.org/",
+              text : 'ChartJS',
+              class : "label chartjs"
             }],
           desc:`Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de 
                     diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques venant s’appliquer dans une application
@@ -85,15 +120,15 @@ export default {
                     Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir 
                     les méthodes de travail en entreprise. <br>
 
-                    <img src="@/assets/bar.jpg" style="width :39%; margin:5%; display:inline-block" >
-                    <img src="@/assets/radar.jpg" style="width :39%; margin:5%; display:inline-block" >
+                    <img src="${require('@/assets/bar.jpg')}" style="width :39%; margin:5%; display:inline-block" >
+                    <img src="${require('@/assets/radar.jpg')}" style="width :39%; margin:5%; display:inline-block" >
                     `,
           img:{
-            link : "https://saintremi.fr/",
-            src : require('@/assets/stremi.png')
+            link : "",
+            src : require('@/assets/chartjs-logo.png')
           },
-          dateFirst : '2017',
-          dateSecond : '2015'
+          dateFirst : 'Juil\n2019',
+          dateSecond : 'Avril\n2019'
         }
       ]
     }

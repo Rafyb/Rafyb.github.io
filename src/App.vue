@@ -26,6 +26,8 @@ html,body{
     border-radius: 6px;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
 }
 
   

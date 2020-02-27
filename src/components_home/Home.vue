@@ -45,7 +45,8 @@ export default {
           utils:
             [{
               link : "https://www.fges.fr/cursus-universitaire/licence-sts/informatique-et-sciences-du-numerique/",
-              text : 'Contenu de la formation'
+              text : 'Contenu de la formation',
+              class : 'link'
             }]
           ,
           desc:'<p>Presentation</p>',
@@ -63,7 +64,8 @@ export default {
           utils:
             [{
               link : "http://www.iut-a.univ-lille.fr/dut-info/",
-              text : 'Contenu de la formation'
+              text : 'Contenu de la formation',
+              class : 'link'
             }],
           desc:'Presentation',
           img:{
@@ -80,7 +82,8 @@ export default {
           utils:
             [{
               link : "https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique",
-              text : 'Contenu de la formation'
+              text : 'Contenu de la formation',
+              class : 'link'
             }],
           desc:'Presentation',
           img:{

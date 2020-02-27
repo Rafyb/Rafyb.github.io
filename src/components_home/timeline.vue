@@ -1,54 +1,16 @@
 <template>
     <div class="timeline">
         <ul>
-            <li v-for="time in timeline" :key="time.id" ><span></span>
+            <li v-for="time in timeline" :key="time.id" >
             <div>
             <div class="title">{{time.title}}</div>
             <div class="info">{{time.info}}</div>
-            <div class="utils"><a :href="time.utils[0].link">{{time.utils[0].text}}</a></div>
+            <div class="utils">
+                <a v-for="label in time.utils" :key="label.text" :class="label.class" :href="label.link">{{label.text}}</a>
+            </div>
             <div class="type" v-html="time.desc"></div>
             <div class="img"><a v-bind:href="time.img.link"><img v-bind:src="time.img.src"></a></div>
             </div> <span class="number"><span>{{time.dateFirst}}</span> <span>{{time.dateSecond}}</span></span>
-            </li>
-        </ul>
-       
-        <ul>
-            <li><span></span>
-                <div>
-                    <div class="title">Développement d'un système de Jeu en 2D isométrique </div>
-                    <div class="info">Vacataire 6 mois </div>
-                    <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 3</span></a> </div>
-                    <div class="type">Présentation<br>
-                    
-                    <img src="@/assets/Carte2DMOSAIC_V2.png" style="width :90%; margin:10px; display:block" >
-                    
-                </div>
-                <div class="img"><img src="@/assets/city_icone.png" ></div>
-                </div> <span class="number"><span>Jui<br>2020</span> <span>Déc 2019</span></span>
-            </li>
-            <li>
-                <div><span></span>
-                    <div class="title">Développement d'un mode multijoueurs en ligne</div>
-                    <div class="info">CDD 1 mois </div>
-                    <div> <a href="/"><span class="label javascript">JavaScript</span></a> <a href="http://phaser.io/"><span class="label phaser">Phaser 2</span></a> </div>
-                    <div class="type">Présentation<br>
-                    
-                    <img src="@/assets/creation.png" style="width :28%; margin:2%;   display:inline-block" >
-                    <img src="@/assets/rejoindre.png" style="width :28%; margin:2%;  display:inline-block" >
-                    <img src="@/assets/partie.png" style="width :28%; margin:2%;  display:inline-block" >
-                    
-                </div>
-                <div class="img"><img src="@/assets/multijoueurs_icone.png" ></div>
-                </div> <span class="number"><span>Aout 2019</span><span>Jui<br>2019</span></span>
-            </li>
-            <li>
-                <div><span></span>
-                    <div class="title">Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle </div>
-                    <div class="info">Stage 3 mois </div>
-                    <div><a href="/"><span class="label javascript">JavaScript</span></a> <a href="/"><span class="label webservice">WebService</span></a> <a href="https://www.chartjs.org/"><span class="label chartjs">ChartJS</span> </a> </div>
-                    <div class="type"></div>
-                    <div class="img"><img src="@/assets/chartjs-logo.png" ></div>
-                </div> <span class="number"><span>Jui<br>2019</span> <span>Avril 2019</span></span>
             </li>
         </ul>
     </div>
@@ -138,13 +100,13 @@ export default {
     margin-top: 15px;
     font-size: 16px;
 }
-.timeline div a{
+.timeline div .link{
     text-decoration: none;
     margin-top: 10px;
     font-size: 16px;
     color:#0768a0;
 }
-.timeline div a:hover{
+.timeline div .link:hover{
     color:#86b7e7;
 }
 .timeline div .info {
