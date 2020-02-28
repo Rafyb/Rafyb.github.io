@@ -18,12 +18,31 @@
     <section id="home_autres">
       <h1>Mes Compétences</h1>
 
-      <p>Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
-      iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset,
-      quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino,
-      humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis
-      vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non
-      modo nihil ignoscendum, sed etiam acriter est resistendum.</p>
+      <h2>Langages utilisés</h2>
+        <ul>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>C</li>
+          <li>HTML / CSS</li>
+          <li>SQL</li>
+        </ul>
+
+      <h2>Outils/Framework utilisés</h2>
+        <ul>
+          <li>Git</li>
+          <li>Azure</li>
+          <li>Vue.js</li>
+          <li>Phaser.js</li>
+        </ul>
+
+        <h2>Langages déja manipulés</h2>
+        <ul>
+          <li>C#</li>
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>Cobol</li>
+        </ul>
+
     </section>
   </div>
 </template>
@@ -101,5 +120,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  ul {
+    text-align: center;
+    list-style: none;
+	}
+	ul li{
+		display: inline;
+    margin:10px;
+	}
 </style>

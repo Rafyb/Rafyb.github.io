@@ -70,6 +70,14 @@ h1{
     border-top: 1px dashed#ccc;
     text-shadow: 0px 1px 1px#fff;
 }
+
+h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: rgb(88, 88, 88);
+    padding-top: 20px;
+    text-shadow: 0px 1px 1px#fff;
+}
 p{
   font-size: 16px;
 }
