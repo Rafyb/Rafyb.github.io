@@ -1,17 +1,20 @@
 <template>
-  <div id="HomeP">
-    <navbar @changePage="pageChange"/>
-    <div v-if="page=='Home'">
-      <Home/>
+  <div id="HomePage">
+    <div id="HomeP">
+      <navbar @changePage="pageChange"/>
+      <div v-if="page=='Home'">
+        <Home/>
+      </div>
+      <div v-if="page=='Expe'">
+        <Experience/>
+      </div>
+      <div v-if="page=='Real'">
+        <Realisation/>
+      </div>
+      <webcat/>
+      <stickybar/>
     </div>
-    <div v-if="page=='Expe'">
-      <Experience/>
-    </div>
-    <div v-if="page=='Real'">
-      <Realisation/>
-    </div>
-    <webcat/>
-    <stickybar/>
+    <footerbar/>
   </div>
 </template>
 
@@ -20,6 +23,7 @@ import navbar from '../components_home/navbar.vue';
 import Realisation from '../components_home/Realisation.vue';
 import Home from '../components_home/Home.vue';
 import Experience from '../components_home/Experience.vue';
+import footerbar from '../components_home/footerbar.vue';
 import stickybar from '../components_home/stickybar.vue';
 import webcat from '../components_home/webcat.vue';
 export default {
@@ -29,6 +33,7 @@ export default {
     Realisation,
     Home,
     Experience,
+    footerbar,
     stickybar,
     webcat
   },
@@ -46,6 +51,12 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 799px){
+  #HomePage{
+    display: none;
+  }
+}
+
 body{
   overflow-y: scroll;
   background : #f8f8f8 url('../assets/home_background.png') center -80px no-repeat;
@@ -56,7 +67,6 @@ section{
 #HomeP {
     max-width: 800px;
     min-width: 380px;
-    padding: 0 30px;
     margin: 0 auto;
     text-align: justify;
     text-justify: inter-word;
@@ -80,5 +90,8 @@ h2{
 }
 p{
   font-size: 16px;
+}
+.home, .experience, .realisation{
+  margin: 2%;
 }
 </style>

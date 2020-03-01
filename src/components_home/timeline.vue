@@ -35,7 +35,7 @@ export default {
     margin: 0;
     list-style: none;
     position: relative;
-    padding: 1px 40px;
+    padding:1px 40px;
     color: rgb(83, 83, 83);
     font-size: 13px;
 }

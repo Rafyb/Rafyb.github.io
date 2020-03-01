@@ -11,11 +11,17 @@ export default {
 </script>
 
 <style>
-html,body{
+
+html{
     height : 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #303030;
+}
+
+body{
+  margin:0;
 }
 
 /* -- Style of the labels -- */

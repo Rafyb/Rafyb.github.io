@@ -27,9 +27,8 @@ export default {
 
 /* Make the image responsive */
 .container img {
-  width: 800px;
+  width: 770px;
   height: auto;
-  margin-top : 40px;
   opacity : 0.7;
 }
 

@@ -28,7 +28,7 @@ new Vue({
 }).$mount('#app')
 
 // WIP PAGE NOT RESPONSIVE
-window.onload =  function(){
+/*window.onload =  function(){
   if( window.devicePixelRatio > 2){
     let path = require("@/assets/workingOn.gif");
     document.querySelector('#app').innerHTML = `
@@ -37,4 +37,4 @@ window.onload =  function(){
     `;
     document.querySelector('body').style.background ='#f8f8f8';
   }
-};
+};*/

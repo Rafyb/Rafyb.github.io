@@ -20,27 +20,31 @@
 
       <h2>Langages utilisés</h2>
         <ul>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>C</li>
-          <li>HTML / CSS</li>
-          <li>SQL</li>
+          <li><img :src="require('@/assets/java.png')"/></li>
+          <li><img :src="require('@/assets/js.png')"/></li>
+          <li><img :src="require('@/assets/c.png')"/></li>
+          <li><img :src="require('@/assets/html.png')"/></li>
+          <li><img :src="require('@/assets/sql.png')"/></li>
         </ul>
 
       <h2>Outils/Framework utilisés</h2>
         <ul>
-          <li>Git</li>
-          <li>Azure</li>
-          <li>Vue.js</li>
-          <li>Phaser.js</li>
+          <li><img :src="require('@/assets/git.png')"/></li>
+          <li><img :src="require('@/assets/azure.png')"/></li>
+          <li><img :src="require('@/assets/vue.png')"/></li>
+          <li><img :src="require('@/assets/phaser2.png')"/></li>
+          <li><img :src="require('@/assets/unity.png')"/></li>
+          <li><img :src="require('@/assets/android.png')"/></li>
         </ul>
 
-        <h2>Langages déja manipulés</h2>
+        <h2>Langages déja manipulé</h2>
         <ul>
-          <li>C#</li>
-          <li>TypeScript</li>
-          <li>Python</li>
-          <li>Cobol</li>
+          <li><img :src="require('@/assets/csharp.png')"/></li>
+          <li><img :src="require('@/assets/typescript.png')"/></li>
+          <li><img :src="require('@/assets/python.png')"/></li>
+          <li><img :src="require('@/assets/cobol.png')"/></li>
+          <li><img :src="require('@/assets/jsp.png')"/></li>
+          <li><img :src="require('@/assets/bash.png')"/></li>
         </ul>
 
     </section>
@@ -128,4 +132,12 @@ export default {
 		display: inline;
     margin:10px;
 	}
+
+  img{
+    border-radius: 10px;
+  }
+
+  img:hover{
+    background-color:rgb(194, 194, 194);
+  }
 </style>
