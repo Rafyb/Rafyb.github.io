@@ -27,14 +27,6 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-// WIP PAGE NOT RESPONSIVE
-/*window.onload =  function(){
-  if( window.devicePixelRatio > 2){
-    let path = require("@/assets/workingOn.gif");
-    document.querySelector('#app').innerHTML = `
-      <h1> Cette page n'est pas encore disponible sur smartphone </h1>
-      <img src="${path}" style=" margin-left: auto; margin-right: auto; display:block" >
-    `;
-    document.querySelector('body').style.background ='#f8f8f8';
-  }
-};*/
+window.onclick = function(){
+alert(document.querySelector('#app').clientWidth);
+};

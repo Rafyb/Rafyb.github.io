@@ -135,9 +135,10 @@ export default {
 
   img{
     border-radius: 10px;
+    filter: grayscale(100%);
   }
 
   img:hover{
-    background-color:rgb(194, 194, 194);
+    filter: grayscale(0%);
   }
 </style>
