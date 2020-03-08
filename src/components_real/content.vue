@@ -80,6 +80,12 @@ export default {
         display: inline-block;
     }
 
+    @media screen and (max-width: 600px) {
+        iframe {
+            width: 80%;
+        }
+    }
+
     @media screen and (max-width: 900px) {
         #content {
             margin-left: 0;
