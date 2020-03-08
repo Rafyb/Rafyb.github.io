@@ -47,16 +47,16 @@ export default {
     border: 0;
     position: fixed;
     right: 10px;
-    top: 20px;
+    top: 10px;
     background-color:#303030;
     color: white;
   }
-  i{
+  .icon{
       font-size: 2em;
       display: none;
   }
   @media screen and (max-width: 900px) {
-    i {
+    .icon {
         display: block;
     }
     #long{

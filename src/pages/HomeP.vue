@@ -89,7 +89,7 @@ section{
     text-justify: inter-word;
 }
 h1{
-    font-size: 32px;
+    font-size: 2.5em;
     font-weight: normal;
     text-align: center;
     color: #333;
@@ -99,14 +99,14 @@ h1{
 }
 
 h2{
-    font-size: 24px;
+    font-size: 2em;
     font-weight: normal;
     color: rgb(88, 88, 88);
     padding-top: 20px;
     text-shadow: 0px 1px 1px#fff;
 }
 p{
-  font-size: 16px;
+  font-size: 1em;
 }
 .home, .experience, .realisation{
   margin: 2%;

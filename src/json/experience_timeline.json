@@ -1,0 +1,82 @@
+{"timeline":[
+    {
+      "id":1,
+      "title":"Développement d'un moteur de jeu 2D isométrique",
+      "info":"Vacataire 6 mois",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript",
+          "class" : "label javascript"
+        },
+        {
+          "link" : "http://phaser.io/",
+          "text" : "Phaser 3" ,
+          "class" : "label phaser"
+        }],
+      "desc":"Présentation<br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/Carte2DMOSAIC_V2.png\" style=\"width :90%; margin:10px; display:block\" >",
+      "img":{
+        "link" : "",
+        "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/city_icone.png"
+      },
+      "dateFirst" : "Juil\n2020" ,
+      "dateSecond" : "Déc\n2019"
+    },
+    {
+      "id":2,
+      "title":"Développement d'un mode multijoueurs en ligne",
+      "info":"CDD 1 mois",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript" ,
+          "class" : "label javascript"
+        },
+        {
+          "link" : "",
+          "text" : "WebService" ,
+          "class" : "label webservice"
+        },
+        {
+          "link" : "http://phaser.io/",
+          "text" : "Phaser 2" ,
+          "class" : "label phaser"
+        }],
+      "desc":"Présentation<br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/creation.png\" style=\"width :28%; margin:2%;   display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/rejoindre.png\" style=\"width :28%; margin:2%;  display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/partie.png\" style=\"width :28%; margin:2%;  display:inline-block\" >",   
+      "img":{
+        "link" : "",
+        "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/multijoueurs_icone.png"
+      },
+      "dateFirst" : "Aout\n2019" ,
+      "dateSecond" : "Juil\n2019"
+    },
+    {
+      "id":3,
+      "title":"Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle" ,
+      "info":"Stage 3 mois",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript" ,
+          "class" : "label javascript"
+        },
+        {
+          "link" : "",
+          "text" : "WebService" ,
+          "class" : "label webservice"
+        },
+        {
+          "link" : "https://www.chartjs.org/",
+          "text" : "ChartJS" ,
+          "class" : "label chartjs"
+        }],
+      "desc":"Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques venant s’appliquer dans une application sur mobile développée par le groupe GIVRE.<br><br>Pour cela j'ai appri à utiliser l'API ChartJS ainsi que l'utilisation des WebServices de l'API Moodle. Durant ce stage j'ai été amenné à rechercher des solutions techniques et à apporter mes idées sur les données pouvant être utile aussi bien pour un enseignant que pour un étudiant. Ce fut aussi ma première occasion d'utiliser l'élément Canvas d'HTML 5 et de comprendre son fonctionnement. Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir les méthodes de travail en entreprise. <br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/bar.jpg\" style=\"width :39%; margin:5%; display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/radar.jpg\" style=\"width :39%; margin:5%; display:inline-block\" >",       
+      "img":{
+        "link" : "",
+        "src" : "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/chartjs-logo.png"
+      },
+      "dateFirst" : "Juil\n2019" ,
+      "dateSecond" : "Avril\n2019"
+    }
+  ]
+}

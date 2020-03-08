@@ -20,11 +20,12 @@ export default {
   },
   computed: {
         link() {
-            console.log(this.$route);
+            console.log(document.querySelector('.icon'));
             let json = "Table des réalisations";
             if( this.$route && this.$route.params && this.$route.params.link){
               json = this.$route.params.link;
             } 
+            if(document.querySelector('.icon') && document.querySelector('.icon').clientWidth > 0)document.querySelector(".sidenav").style.display ="none";
             return json;
         }
   },

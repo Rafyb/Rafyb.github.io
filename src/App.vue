@@ -29,7 +29,7 @@ body{
     color: white;
     padding: 4px;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: bold;
     text-decoration: none;
     margin-right: 5px;
@@ -45,5 +45,8 @@ body{
 .javascript{background-color: #f2dd2d; color:black;}
 .webservice{background-color: #f98113;}
 .vue{background-color: #41b883;}
+.socket{background-color: #e7e7e7; color: black;}
+.typescript{background-color: #187abf; }
+.java{background-color: #2f6db8;color: white;}
 
 </style>
