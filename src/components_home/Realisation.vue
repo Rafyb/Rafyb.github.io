@@ -35,7 +35,7 @@ export default {
 /* Style the button and place it in the middle of the container/image */
 .container .btn{
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

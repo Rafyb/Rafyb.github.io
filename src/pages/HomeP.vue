@@ -14,6 +14,12 @@
       <webcat/>
       <stickybar/>
     </div>
+    <div id="WIP">
+    <p>Site web pas encore disponible sur mobile, veuillez le consulter sur ordinateur</p>
+    <p>La partie réalisation est disponible :
+    <a href="/#/Realisations/">Réalisations</a>
+    </p>
+    </div>
     <footerbar/>
   </div>
 </template>
@@ -51,9 +57,20 @@ export default {
 </script>
 
 <style>
+
+#WIP{
+  width:90%;
+  background-color: white;
+  padding: 5%;
+  display: none;
+}
+
 @media screen and (max-width: 799px){
-  #HomePage{
+  #HomeP{
     display: none;
+  }
+  #WIP{
+    display: block;
   }
 }
 

@@ -53,6 +53,7 @@
 
 <script>
 import timeline from './timeline.vue';
+import json from '../json/home_timeline.json'
 export default {
   name: 'Home',
   components:{
@@ -60,63 +61,13 @@ export default {
   },
   data:function() {
     return{
-      timeline:[
-        {
-          id:1,
-          title:'Licence 3 - Sciences du Numérique ',
-          info:'Formation sur 1 an, Niveau BAC+3',
-          utils:
-            [{
-              link : "https://www.fges.fr/cursus-universitaire/licence-sts/informatique-et-sciences-du-numerique/",
-              text : 'Contenu de la formation',
-              class : 'link'
-            }]
-          ,
-          desc:'',
-          img:{
-            link : "https://www.fges.fr/",
-            src : require('@/assets/fges_min.png')
-          },
-          dateFirst : '2020',
-          dateSecond : '2019'
-        },
-        {
-          id:2,
-          title:'DUT Informatique',
-          info:'Formation sur 2 ans, Niveau BAC+2',
-          utils:
-            [{
-              link : "http://www.iut-a.univ-lille.fr/dut-info/",
-              text : 'Contenu de la formation',
-              class : 'link'
-            }],
-          desc:'',
-          img:{
-            link : "https://www.iut-a.univ-lille.fr/",
-            src : require('@/assets/iuta.png')
-          },
-          dateFirst : '2019',
-          dateSecond : '2017'
-        },
-        {
-          id:3,
-          title:'Bac STI2D - options SIN',
-          info:"Bac Sciences et Technologies de l'Industrie et du Développement Durable - Système de l'Information et du Numérique",
-          utils:
-            [{
-              link : "https://www.cidj.com/etudes-formations-alternance/les-diplomes/bac-sti2d-bac-technologique",
-              text : 'Contenu de la formation',
-              class : 'link'
-            }],
-          desc:'',
-          img:{
-            link : "https://saintremi.fr/",
-            src : require('@/assets/stremi.png')
-          },
-          dateFirst : '2017',
-          dateSecond : '2015'
-        }
-      ]
+      
+    }
+  },
+  computed:{
+    timeline(){
+      console.log(json);
+      return json.timeline;
     }
   }
 }

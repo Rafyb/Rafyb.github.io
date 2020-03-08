@@ -1,0 +1,17 @@
+{
+    "title":"Cette page n'est pas encore complété",
+    "badges":[{
+        "link" : "",
+        "text" : "JavaScript",
+        "class" : "label javascript"
+      },
+      {
+        "link" : "https://vuejs.org/",
+        "text" : "Vue.js",
+        "class" : "label vue"
+      }],
+    "video":"https://www.youtube.com/embed/gnGiUUIPvEI",
+    "images":[],
+    "link":"https://github.com/Rafyb/Rafyb.github.io",
+    "description":"<h2>Membres de l'équipe</h2><p>Developpeur : Raphael</p><h2> Description du projet </h2><p>Ceci est une page type créer par un composant Vue en se basant sur un JSON, si cette page apparait c'est que le contenu de la page n'a pas encore été réalisé. Je vous invite à consulter une autre page du site</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Ut diam quam nulla porttitor massa id neque. Arcu cursus euismod quis viverra nibh cras pulvinar. Augue eget arcu dictum varius duis at consectetur lorem. Vitae suscipit tellus mauris a diam maecenas. Integer vitae justo eget magna fermentum iaculis eu. Sit amet nulla facilisi morbi tempus. Dignissim enim sit amet venenatis urna cursus. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Gravida quis blandit turpis cursus in hac habitasse. Facilisis sed odio morbi quis commodo odio aenean. Mi ipsum faucibus vitae aliquet. A cras semper auctor neque vitae tempus quam pellentesque. Id nibh tortor id aliquet lectus. Mattis rhoncus urna neque viverra. Et netus et malesuada fames ac.</p><p>Merci de votre compréhension</p>"
+}

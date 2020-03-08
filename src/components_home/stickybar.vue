@@ -12,14 +12,17 @@ export default {
   name: 'stickybar',
   methods:{
       clochette(){
-          document.querySelector('#mydiv').style.display = "block";
-          Document.dragElement();
+          if(document.querySelector('#mydiv').style.display == "block") document.querySelector('#mydiv').style.display = "none";
+          else {
+            document.querySelector('#mydiv').style.display = "block";
+            Document.dragElement();
+          }
       }
   }
 }
 </script>
 
-<style scoped>
+<style>
 /* -- Style the social icon bar -- */
 
 .icon-bar {

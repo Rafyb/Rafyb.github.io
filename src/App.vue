@@ -13,7 +13,6 @@ export default {
 <style>
 
 html{
-    height : 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -45,5 +44,6 @@ body{
 .other {background-color: #e7e7e7; color: black;} /* Gray */
 .javascript{background-color: #f2dd2d; color:black;}
 .webservice{background-color: #f98113;}
+.vue{background-color: #41b883;}
 
 </style>

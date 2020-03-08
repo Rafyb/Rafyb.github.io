@@ -16,7 +16,7 @@ const router = new VueRouter({
     component: HomeP,
   },
   {
-    path:'/Realisations/',
+    path:'/Realisations/:link?',
     component:RealisationP
   }]
 })
@@ -26,7 +26,7 @@ new Vue({
   router:router,
   render: h => h(App),
 }).$mount('#app')
-
+/*
 window.onclick = function(){
 alert(document.querySelector('#app').clientWidth);
-};
+};*/

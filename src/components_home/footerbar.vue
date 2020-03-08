@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
     Made with <img width="16px" :src="require('@/assets/logo.png')"/>  /  Hosted by <img width="20px" :src="require('@/assets/firebase.png')"/>
+    <br> Contact : <a href="mailto:raphael.bauvin.etu@univ-lille.fr"><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail</a>
     
   </div>
 </template>
@@ -26,7 +27,12 @@ export default {
     text-align: center;
     margin-top: 7%;
     color:rgb(207, 207, 207);
-    font-size: 20px;
+    font-size: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: #cfcfcf;
 }
 
 
