@@ -12,7 +12,7 @@
       <a href="http://pharmacie.univ-lille.fr/innovations-pedagogiques/le-groupe-givre.html"><img :src="givreImg" style=" margin-left: auto; margin-right: auto; display:block" ></a>
             
       <p>Leur objectif est d’exploiter au mieux les supports numériques pour aider les étudiants dans leurs apprentissages à l’aide de supports 
-      de travail adaptatif (Learning Adaptive) et d’outil d’analyse des apprentissages (Learning Analytics).</p>
+      de travail adaptatif (Learning Adaptive) et d’outils d’analyse des apprentissages (Learning Analytics).</p>
       <br/>
       <br/>
       <timeline :timeline="timeline"/>

@@ -37,6 +37,8 @@ export default {
     background : #303030;
     width:100%;
     height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
 </style>

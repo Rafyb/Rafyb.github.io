@@ -1,0 +1,19 @@
+{
+    "title":"Application Modélisation 3D",
+    "icone":"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/skull.PNG",
+    "badges":[{
+        "link" : "",
+        "text" : "Java",
+        "class" : "label java"
+      },
+      {
+        "link" : "https://openjfx.io/ ",
+        "text" : "JavaFX",
+        "class" : "label java"
+      }
+    ],
+    "video":"https://www.youtube.com/embed/eO2acBglMA8",
+    "images":[],
+    "link":"https://github.com/Rafyb/Model3D",
+    "description":"<h2>Membres de l'équipe et tâches realisées</h2><ul><li>Développeurs : <ul><li>Raphaël  <ul><li>Class Affichage</li><li>Class GestionAffichage</li><li>Concept MVC ( via Observer/Observable )</li><li>Class OtherVue => Rotation Automatique</li><li>Desing pattern Singleton ( sur la Class Modele )</li><li>Desing pattern Strategie ( sur package Matrices )</li><li>Javadoc (livrable 2)</li></ul></li><li>Lucas<ul><li>Class Modele</li><li>Tests Unitaire</li><li>Class WrongNumberFace</li><li>Class WrongNumberOfPoint</li></ul></li><li>Théo  <ul><li>Class ReadFichier</li><li>Class Modèle ( Methodes triZ, centrer, updateCentre )</li><li>Class et Méthodes de transformations ( Rotation, Translation, Redimensionnement )</li><li>Controles de la souris, clique droit/gauche et molette sur l'objet ( dans class Affichage )</li></ul></li><li>Clément<ul><li>Class Face</li><li>Class Point</li><li>JavaDoc (livrable 1)</li></ul></li></ul></li></ul><h2> Description </h2><h2> Utilisation </h2><h3>/!\\ Le Model3D.jar doit etre placer avec le dossier \"data\" contenant les modeles .ply pour fonctinner. /!\\</h3><p>Au lancement, le modele beethoven.ply est charge.<ul><li>Le modele est ensuite changeable grace a la liste de modele disponible sur le panel de controle a droite.</li><li>Les boutons permettent de realiser les rotations, translations, zoom/dezoom et les sliders changent la marge du movement.</li><li>Les checkBox traits/faces permettent de cacher les traits ou faces.</li><li>L'appli prend en charge les modeles avec couleur comme \"skull.ply\".</li><li>On peut realiser une translation grace au clique droit de la souris.</li><li>Maintenir la touche ctrl pour une rotation seulement horizontal.</li><li>Maintenir la touche shift pour une rotation seulement vertical.</li><li>La molette permet le zoom et dezoom.</li><li>La checkBox ombre permet d'activre l'ombre et la lumiere sur l'objet.</li><li>Rotation automatique ouvre une nouvelle fenetre sur laquel l'objet effectue une rotation automatique tant que la fenetre est en premier plan.</li></ul></p>"
+  }

@@ -6,7 +6,7 @@
         <router-link to="/Realisations/QW"><i class="fa fa-globe"></i> Quizz Web </router-link>
         <router-link class="unvalable" to="/Realisations/LTD"><i class="fa fa-cog"></i> Lanceur Taches diférées </router-link>
         <router-link class="unvalable" to="/Realisations/COM"><i class="fa fa-globe"></i> ComWivMi </router-link>
-        <router-link class="unvalable" to="/Realisations/A3D"><i class="fa fa-window-maximize"></i> Application affichage modèle 3D </router-link>
+        <router-link to="/Realisations/A3D"><i class="fa fa-window-maximize"></i> Application affichage modèle 3D </router-link>
         <router-link to="/Realisations/JGV"><i class="fa fa-gamepad" ></i> Jeu de gestion de village </router-link>
         <router-link class="unvalable" to="/Realisations/SW"><i class="fa fa-cog"></i> Serveur Web </router-link>
         <router-link class="unvalable" to="/Realisations/NG"><i class="fa fa-window-maximize"></i> Nuanceur de gris </router-link>
