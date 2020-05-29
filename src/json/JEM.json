@@ -1,0 +1,14 @@
+{
+    "title":"Jeu pédagogique sur les mathématiques",
+    "icone":"",
+    "badges":[{
+        "link" : "",
+        "text" : "Java",
+        "class" : "label java"
+      }
+    ],
+    "video":"https://www.youtube.com/embed/Hg3BoVSQTJI",
+    "images":[],
+    "link":"",
+    "description":"<h2>Membres de l'équipe</h2>Développeurs : <ul><li>Raphaël</li></ul><h2> Description </h2><p>Premier projet de DUT, création d'un jeu pédagogique pour la visite d'élève de primaire. <br>Le jeu doit être réaliser en binome ou seul et doit contenir du gameplay à but pédagogique, le contenu et la réalisation est totalement libre. <br>Ce projet a été choisi avec 9 autres sur les 50 projets réalisés dans la promotion afin d'être proposé à la visite des élèves. <br>La difficulté est progressive et les cartes sont de plus en plus grande.</p>"
+}

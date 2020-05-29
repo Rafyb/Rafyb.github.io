@@ -16,11 +16,15 @@ html{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #303030;
+    background-color: #0768a0;
+    width:100%;
+    height: 100%;
 }
 
 body{
   margin:0;
+  width:100%;
+  height: 100%;
 }
 
 /* -- Style of the labels -- */
@@ -34,6 +38,30 @@ body{
     text-decoration: none;
     margin-right: 5px;
 }
+
+.block{
+    text-align: justify;
+    margin: auto;
+}
+
+@media screen and (min-width: 1000px){
+  .block{
+    width: 900px;
+  }
+}
+/*
+@media screen and (min-width: 799px){
+  .block{
+    width: 700px;
+  }
+}*/
+
+@media screen and (max-width: 799px){
+  .block{
+    width: 90%;
+  }
+}
+
 
   
 .success {background-color: #4CAF50;} /* Green */

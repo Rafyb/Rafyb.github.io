@@ -1,7 +1,9 @@
 <template>
   <div class="realisation">
-    <section class="container">
+    <section id="realisation">
       <h1>Accéder à mes réalisations</h1>
+    </section>
+    <section class="container">
       <img src="@/assets/realisations_access.png" alt="realisation_page">
       <router-link to="/Realisations/" class="btn">Entrer</router-link>
     </section>
@@ -25,23 +27,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-/* Make the image responsive */
-.container img {
-  width: 770px;
-  height: auto;
-  opacity : 0.7;
+.container{
+  position: relative;
+  width: 100%;
 }
 
-/* Style the button and place it in the middle of the container/image */
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+  opacity : 0.8;
+}
+
 .container .btn{
   position: absolute;
-  top: 500px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(34, 34, 34);
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -52,5 +58,14 @@ export default {
 .container .btn:hover {
   background-color: rgb(138, 138, 138);
 } 
+
+/* Style the button and place it in the middle of the container/image */
+
+#realisation{
+  background-color: #c76912;
+  color: white;
+  padding:2%;
+}
+
 
 </style>

@@ -11,8 +11,8 @@ Vue.config.productionTip = false
 Vue.use(VueRouter )
 
 const router = new VueRouter({
+  mode:'history',
   routes:[{
-    mode: 'history',
     linkExactActiveClass: 'is-active',
     path:'/',
     component: HomeP,

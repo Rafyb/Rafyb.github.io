@@ -19,6 +19,7 @@ import base from '../json/base.json'
 import QW from '../json/QW.json'
 import JGV from '../json/JGV.json'
 import A3D from '../json/A3D.json'
+import JEM from '../json/JEM.json'
 export default {
   name: 'contentpage',
   props:{
@@ -29,6 +30,7 @@ export default {
           if(this.link == 'QW') return QW;
           if(this.link == 'JGV') return JGV;
           if(this.link == 'A3D') return A3D;
+          if(this.link == 'JEM') return JEM;
           return base;
       }
   }

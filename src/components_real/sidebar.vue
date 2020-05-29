@@ -2,26 +2,27 @@
   <div class="sidenav">
     <button id="dropdown-btn1" class="dropdown-btn" v-on:click="dropdown">Etudiants <i  id="arrow1" class="fa fa-caret-down"></i> </button>
     <div id="dropdown-container1" class="dropdown-container">
+        <router-link class="unvalable" to="/Realisations/PJ"><i class="fa fa-globe"></i> Pokejora </router-link>
         <router-link class="unvalable" to="/Realisations/FU" disabled><i class="fa fa-gamepad" ></i> Flipper Unity</router-link>
         <router-link to="/Realisations/QW"><i class="fa fa-globe"></i> Quizz Web </router-link>
         <router-link class="unvalable" to="/Realisations/LTD"><i class="fa fa-cog"></i> Lanceur Taches diférées </router-link>
         <router-link class="unvalable" to="/Realisations/COM"><i class="fa fa-globe"></i> ComWivMi </router-link>
+        <router-link class="unvalable" to="/Realisations/SW"><i class="fa fa-cog"></i> Serveur Web </router-link>
         <router-link to="/Realisations/A3D"><i class="fa fa-window-maximize"></i> Application affichage modèle 3D </router-link>
         <router-link to="/Realisations/JGV"><i class="fa fa-gamepad" ></i> Jeu de gestion de village </router-link>
-        <router-link class="unvalable" to="/Realisations/SW"><i class="fa fa-cog"></i> Serveur Web </router-link>
         <router-link class="unvalable" to="/Realisations/NG"><i class="fa fa-window-maximize"></i> Nuanceur de gris </router-link>
         <router-link class="unvalable" to="/Realisations/JPP"><i class="fa fa-gamepad" ></i> Jeu pédagogique gestion de projet </router-link>
-        <router-link class="unvalable" to="/Realisations/JEM"><i class="fa fa-gamepad" ></i> Jeu éducatif mathématiques </router-link>
+        <router-link to="/Realisations/JEM"><i class="fa fa-gamepad" ></i> Jeu éducatif mathématiques </router-link>
     </div>
     <button id="dropdown-btn2" class="dropdown-btn" v-on:click="dropdown">Personnels <i id="arrow2" class="fa fa-caret-down"></i> </button>
     <div id="dropdown-container2" class="dropdown-container">
         <router-link class="unvalable" to="/Realisations/MSW"><i class="fa fa-globe"></i> Mon site web </router-link>
-        <router-link class="unvalable" to="/Realisations/TDU"><i class="fa fa-gamepad" ></i> Tower Defense Unity </router-link>
+        <router-link class="unvalable" to="/Realisations/RPG"><i class="fa fa-gamepad" ></i> RPG Multivers </router-link>
         <router-link class="unvalable" to="/Realisations/MBI"><i class="fa fa-gamepad" ></i> Medieval Builder Iso </router-link>
     </div>
     <button id="dropdown-btn3" class="dropdown-btn" v-on:click="dropdown">Reflexions <i id="arrow3" class="fa fa-caret-down"></i> </button>
     <div id="dropdown-container3" class="dropdown-container">
-        <router-link  class="unvalable" to="/Realisations/CG"><i class="fa fa-calculator"></i> Colorations de Graphe </router-link>
+        <router-link  class="unvalable" to="/Realisations/ICPC"><i class="fa fa-calculator"></i> Problèmes ICPC </router-link>
         <router-link  class="unvalable" to="/Realisations/I3D"><i class="fa fa-cubes"></i> Isometrie 2D </router-link>
     </div>
    </div> 
@@ -33,7 +34,7 @@ export default {
   methods:{
     dropdown(event){
       console.log(event.originalTarget.id);
-      if('dropdown-btn1'==event.originalTarget.id){
+      if('dropdown-btn1'==event.originalTarget.id ||'arrow1'==event.originalTarget.id  ){
         if(document.querySelector('#dropdown-container1').style.display == 'none'){
           document.querySelector('#dropdown-container1').style.display = 'block';
           document.querySelector('#arrow1').classList.remove('fa-caret-left');
@@ -44,7 +45,7 @@ export default {
           document.querySelector('#arrow1').classList.add('fa-caret-left');
         }
       }
-      if('dropdown-btn2'==event.originalTarget.id){
+      if('dropdown-btn2'==event.originalTarget.id ||'arrow2'==event.originalTarget.id){
         if(document.querySelector('#dropdown-container2').style.display == 'none'){
           document.querySelector('#dropdown-container2').style.display = 'block';
           document.querySelector('#arrow2').classList.remove('fa-caret-left');
@@ -55,7 +56,7 @@ export default {
           document.querySelector('#arrow2').classList.add('fa-caret-left');
         }
       }
-      if('dropdown-btn3'==event.originalTarget.id){
+      if('dropdown-btn3'==event.originalTarget.id ||'arrow3'==event.originalTarget.id){
         if(document.querySelector('#dropdown-container3').style.display == 'none'){
           document.querySelector('#dropdown-container3').style.display = 'block';
           document.querySelector('#arrow3').classList.remove('fa-caret-left');

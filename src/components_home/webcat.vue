@@ -1,6 +1,6 @@
 <template>
   <div id="mydiv">
-        <div id="mydivheader">webcat.png</div>
+        <div id="mydivheader">Clochette.png</div>
         <img src="@/assets/webcat.jpg" width="200" height="150">
     </div>
 </template>
@@ -58,7 +58,7 @@ Document.dragElement = function() {
 
 <style scoped>
 #mydiv {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
@@ -71,7 +71,7 @@ Document.dragElement = function() {
     padding: 10px;
     cursor: move;
     z-index: 10;
-    background-color: #0768a0;
+    background-color: #bb0000;
     color: #fff;
 }
 </style>

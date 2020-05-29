@@ -1,31 +1,21 @@
 <template>
   <div id="HomePage">
     <div id="HomeP">
-      <navbar @changePage="pageChange"/>
-      <div v-if="page=='Home'">
-        <Home/>
-      </div>
-      <div v-if="page=='Expe'">
-        <Experience/>
-      </div>
-      <div v-if="page=='Real'">
-        <Realisation/>
-      </div>
+      <headerbar/>
+      <bgCanvas/>
+      <Home/>
+      <Experience/>
+      <Realisation/>
       <webcat/>
       <stickybar/>
-    </div>
-    <div id="WIP">
-    <p>Site web pas encore disponible sur mobile, veuillez le consulter sur ordinateur</p>
-    <p>La partie réalisation est disponible :
-    <a href="/#/Realisations/">Réalisations</a>
-    </p>
     </div>
     <footerbar/>
   </div>
 </template>
 
 <script>
-import navbar from '../components_home/navbar.vue';
+import headerbar from '../components_home/headerbar.vue';
+import bgCanvas from '../components_home/bgCanvas.vue';
 import Realisation from '../components_home/Realisation.vue';
 import Home from '../components_home/Home.vue';
 import Experience from '../components_home/Experience.vue';
@@ -35,7 +25,8 @@ import webcat from '../components_home/webcat.vue';
 export default {
   name: 'HomeP',
   components:{
-    navbar,
+    headerbar,
+    bgCanvas,
     Realisation,
     Home,
     Experience,
@@ -58,57 +49,17 @@ export default {
 
 <style>
 
-#WIP{
-  width:90%;
-  background-color: white;
-  padding: 5%;
-  display: none;
-}
 
 @media screen and (max-width: 799px){
-  #HomeP{
-    display: none;
-  }
-  #WIP{
-    display: block;
-  }
+
 }
 
 body{
   overflow-y: scroll;
-  background : #f8f8f8 url('../assets/home_background.png') center -80px no-repeat;
-}
-section{
-  padding-top: 20px;
-}
-#HomeP {
-    max-width: 800px;
-    min-width: 380px;
-    margin: 0 auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
-h1{
-    font-size: 2.5em;
-    font-weight: normal;
-    text-align: center;
-    color: #333;
-    padding-top: 20px;
-    border-top: 1px dashed#ccc;
-    text-shadow: 0px 1px 1px#fff;
 }
 
-h2{
-    font-size: 2em;
-    font-weight: normal;
-    color: rgb(88, 88, 88);
-    padding-top: 20px;
-    text-shadow: 0px 1px 1px#fff;
+section{
+  box-shadow: 0px 5px 5px #36363677;
 }
-p{
-  font-size: 1em;
-}
-.home, .experience, .realisation{
-  margin: 2%;
-}
+
 </style>

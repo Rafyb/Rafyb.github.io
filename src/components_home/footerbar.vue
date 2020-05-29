@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
-    Made with <img width="16px" :src="require('@/assets/logo.png')"/>  /  Hosted by <img width="20px" :src="require('@/assets/firebase.png')"/>
-    <br> Contact : <a href="mailto:raphael.bauvin.etu@univ-lille.fr"><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail</a>
+    Made with <img width="16px" :src="require('@/assets/logo.png')"/>  /  Hosted by <img width="20px" :src="require('@/assets/firebase.png')"/> / Contact : <a href="mailto:raphael.bauvin@univ-lille.fr"><i class="fa fa-envelope-o" aria-hidden="true"></i> Mail</a>
     
   </div>
 </template>
@@ -23,9 +22,8 @@ export default {
 .footer {
     display: block;
     background-color:rgb(48, 48, 48); 
-    padding: 4%;
+    padding : 30px;
     text-align: center;
-    margin-top: 7%;
     color:rgb(207, 207, 207);
     font-size: 1em;
 }

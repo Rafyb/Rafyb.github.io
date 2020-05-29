@@ -8,8 +8,8 @@
             <div class="utils">
                 <a v-for="label in time.utils" :key="label.text" :class="label.class" :href="label.link">{{label.text}}</a>
             </div>
-            <div class="type" v-html="time.desc"></div>
             <div class="img"><a v-bind:href="time.img.link"><img v-bind:src="time.img.src"></a></div>
+            <div class="type" v-html="time.desc"></div>
             </div> <span class="number"><span>{{time.dateFirst}}</span> <span>{{time.dateSecond}}</span></span>
             </li>
         </ul>
@@ -31,25 +31,88 @@ export default {
 </script>
 
 <style>
+
+@media screen and (min-width: 799px){
+    .timeline ul:before {
+        content: "";
+        width: 5px;
+        height: 100%;
+        left:71px;
+        position: absolute;
+        border-left: 3px dashed rgb(56, 56, 56);
+    }
+
+    .timeline ul li > span:before, ul li > span:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid rgb(32, 32, 32);
+        position: absolute;
+        background: #86b7e7;
+        left:-8px;
+        top: 0;
+    }
+
+    .timeline ul li span:after {
+        top: 100%;
+    }
+
+    span.number {
+        height: 100%;
+    }
+    span.number span {
+        position: absolute;
+        font-size: 15px;
+        left: -55px;
+        font-weight: bold;
+    }
+
+    .timeline div .img {
+        position: absolute;
+        right: -5px;
+        top: -50px;
+        border-radius: 5px;
+        background-color: #ffffffa8;
+    }
+
+    .timeline ul li {
+        position: relative;  
+    } 
+    .timeline ul {
+        padding:1px 40px;
+    }
+
+    .timeline ul li {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 799px){
+    span.number{
+        display: none;
+    }
+
+    .timeline ul li {
+        margin-left: 0px;
+    }
+
+    .timeline ul {
+        padding: 0;  
+    } 
+
+}
+
+
 .timeline ul {
     margin: 0;
     list-style: none;
     position: relative;
-    padding:1px 40px;
     color: rgb(83, 83, 83);
     font-size: 13px;
 }
-.timeline ul:before {
-    content: "";
-    width: 5px;
-    height: 100%;
-    left:71px;
-    position: absolute;
-    border-left: 3px dashed rgb(56, 56, 56);
-}
+
 .timeline ul li {
-    position: relative;
-    margin-left: 30px;
     background-color: rgb(209, 209, 209);
     padding: 14px;
     border-radius: 6px;
@@ -74,20 +137,7 @@ export default {
     position: absolute;
     left:-30px;
 }
-.timeline ul li > span:before, ul li > span:after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid rgb(32, 32, 32);
-    position: absolute;
-    background: #86b7e7;
-    left:-8px;
-    top: 0;
-}
-.timeline ul li span:after {
-    top: 100%;
-}
+
 .timeline ul li > div {
     margin-left: 10px;
 }
@@ -116,25 +166,11 @@ export default {
     margin-bottom: 10px;
     width:80%;
   }
-.timeline div .img {
-    position: absolute;
-    right: -5px;
-    top: -50px;
-    border-radius: 5px;
-    background-color: #ffffffa8;
-}
+
 .timeline div > div {
     margin-top: 5px;
 }
-span.number {
-    height: 100%;
-}
-span.number span {
-    position: absolute;
-    font-size: 15px;
-    left: -55px;
-    font-weight: bold;
-}
+
 span.number span:first-child {
     top: 0;
 }
