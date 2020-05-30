@@ -1,6 +1,6 @@
 {
     "title":"Jeu pédagogique sur les mathématiques",
-    "icone":"",
+    "icone":"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/JEM.PNG",
     "badges":[{
         "link" : "",
         "text" : "Java",

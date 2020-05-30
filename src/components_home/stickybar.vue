@@ -2,6 +2,7 @@
     <div class="icon-bar">
             <a href="#" class="youtube" v-on:click="clochette"><i class="fa fa-youtube"></i></a>
             <a href="https://www.linkedin.com/in/rapha%C3%ABl-bauvin-b6911a151/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.artstation.com/raphalbauvin" class="github"><i class="fa fa-artstation"><img src="https://img.icons8.com/color/48/000000/artstation.png" style="height: 20px;"/></i></a>
             <a href="https://github.com/Rafyb" class="github"><i class="fa fa-github"></i></a>
     </div>
 </template>
@@ -11,7 +12,8 @@
 export default {
   name: 'stickybar',
   methods:{
-      clochette(){
+      clochette(event){
+          event.preventDefault();
           if(document.querySelector('#mydiv').style.display == "block") document.querySelector('#mydiv').style.display = "none";
           else {
             document.querySelector('#mydiv').style.display = "block";

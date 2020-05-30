@@ -30,6 +30,7 @@
           <li><img :src="require('@/assets/java.png')"/></li>
           <li><img :src="require('@/assets/js.png')"/></li>
           <li><img :src="require('@/assets/c.png')"/></li>
+          <li><img :src="require('@/assets/python.png')"/></li>
           <li><img :src="require('@/assets/html.png')"/></li>
           <li><img :src="require('@/assets/sql.png')"/></li>
         </ul>
@@ -48,7 +49,6 @@
         <ul>
           <li><img :src="require('@/assets/csharp.png')"/></li>
           <li><img :src="require('@/assets/typescript.png')"/></li>
-          <li><img :src="require('@/assets/python.png')"/></li>
           <li><img :src="require('@/assets/cobol.png')"/></li>
           <li><img :src="require('@/assets/jsp.png')"/></li>
           <li><img :src="require('@/assets/bash.png')"/></li>

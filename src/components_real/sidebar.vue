@@ -2,7 +2,7 @@
   <div class="sidenav">
     <button id="dropdown-btn1" class="dropdown-btn" v-on:click="dropdown">Etudiants <i  id="arrow1" class="fa fa-caret-down"></i> </button>
     <div id="dropdown-container1" class="dropdown-container">
-        <router-link class="unvalable" to="/Realisations/PJ"><i class="fa fa-globe"></i> Pokejora </router-link>
+        <router-link to="/Realisations/PJ"><i class="fa fa-globe"></i> Pokejora </router-link>
         <router-link class="unvalable" to="/Realisations/FU" disabled><i class="fa fa-gamepad" ></i> Flipper Unity</router-link>
         <router-link to="/Realisations/QW"><i class="fa fa-globe"></i> Quizz Web </router-link>
         <router-link class="unvalable" to="/Realisations/LTD"><i class="fa fa-cog"></i> Lanceur Taches diférées </router-link>

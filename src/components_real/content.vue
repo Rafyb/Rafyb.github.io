@@ -8,6 +8,7 @@
         <img :src="page.icone"/>
         <div v-html="page.description"></div>
         <h2>Démo et exemples</h2>
+        <carrousel v-if="page.images.length > 0" :liste="page.images" :length="page.images.length"/>
         <iframe v-if="page.video" width="560" height="315" :src="page.video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <a v-if="page.link" class="gitlink github" :href="page.link"><i class="fa fa-github"></i><span> Lien vers le projet </span></a>
@@ -15,13 +16,18 @@
 </template>
 
 <script>
+import carrousel from './carrousel.vue'
 import base from '../json/base.json'
 import QW from '../json/QW.json'
 import JGV from '../json/JGV.json'
 import A3D from '../json/A3D.json'
 import JEM from '../json/JEM.json'
+import POKE from '../json/POKE.json'
 export default {
   name: 'contentpage',
+  components:{
+      carrousel
+  },
   props:{
       link:String
   },
@@ -31,6 +37,7 @@ export default {
           if(this.link == 'JGV') return JGV;
           if(this.link == 'A3D') return A3D;
           if(this.link == 'JEM') return JEM;
+          if(this.link == 'PJ') return POKE;
           return base;
       }
   }

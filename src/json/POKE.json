@@ -1,0 +1,19 @@
+{
+    "title":"Pokejora : Pokedex Web App",
+    "icone":"https://raw.githubusercontent.com/Rafyb/Pokejora/master/docs/screens/Acceuil.png",
+    "badges":[{
+        "link" : "",
+        "text" : "JavaScript",
+        "class" : "label javascript"
+      },
+      {
+        "link" : "https://vuejs.org/",
+        "text" : "Vue.js",
+        "class" : "label vue"
+      }
+    ],
+    "video":"",
+    "images":["https://raw.githubusercontent.com/Rafyb/Pokejora/master/docs/screens/Pokedex.png","https://raw.githubusercontent.com/Rafyb/Pokejora/master/docs/screens/Pokemon.png","https://raw.githubusercontent.com/Rafyb/Pokejora/master/docs/screens/Equipe.png"],
+    "link":"https://github.com/Rafyb/Pokejora",
+    "description":"<h2>Membres de l'équipe</h2><ul><li>Développeurs : <ul><li>Raphaël</li><li>Johann</li></ul></li></ul><h2> Objectifs visés </h2><p>Le but de ce projet est que de réalisier un projet de 0 qui comprend toutes les notions VueJS vu en cours ( les bases de Vue, les routers, le store, ...). Le sujet est libre parmis plusieurs API mise à disposition. </p><h2> Réalisation </h2><p>Le projet a éré réalisé sur une durée très courte, l'API utilisée est la <a href=\"https://pokeapi.co/\">PokeAPI</a>.<br>L'application comporte encore des soucis par rapport à la vitesse de l'API mais elle est disponible ici : <a href=\"https://pokejora.firebaseapp.com/\">Pokejora</a></p>"
+}
