@@ -3,10 +3,14 @@
 
         <div id="logo">
             <a href="/">Raphael Bauvin</a>
-            <span>Web Apps & Games Developer</span>
+            <div class="transparent">
+                <span>Web Apps & Games Developer</span>
+                <!--<span>Web Apps & Games Developer</span>-->
+            </div>
+
         </div>
 
-        <div id="jeu" width="100%"></div>
+        <div id="jeu" width="100%" height="300px"></div>
     
     </div>
 </template>
@@ -39,16 +43,21 @@ export default {
 @media screen and (min-width: 799px){
 
     #logo span{
-        font-size: 3rem;
+        font-size: 2rem;
+        box-shadow: 0px 5px 5px rgb(65, 65, 65);
+        border-radius: 15px;
+        padding: 2px 15px 2px 15px;
+        background-color: #fff;
+        color: rgb(17, 17, 17);
     }
 
     #logo a {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #logo {
-        top:15%;
-        left:15%;
+        top:84px;
+        left:64px;
     }
 }
 
@@ -56,6 +65,10 @@ export default {
 
     #logo span{
         font-size: 2rem;
+        box-shadow: 0px 5px 5px rgb(65, 65, 65);
+        padding: 4px;
+        background-color: #fff;
+        color: rgb(17, 17, 17);
     }
 
     #logo a {
@@ -69,14 +82,23 @@ export default {
     }
 }
 
-#logo span{
-    box-shadow: 0px 5px 5px rgb(65, 65, 65);
-    background-color: #fff;
-    mix-blend-mode: screen;
-    color: #000;
-    font-weight: 700;
-    padding: 4px;
+#logo .transparent{
+    
 }
+
+#logo .transparent span{
+
+    font-weight: 700;
+
+    /*mix-blend-mode: screen;*/
+}
+/*
+#logo .transparent span:last-child{
+    mix-blend-mode: normal;
+    color: transparent;
+    background: none;
+}*/
+
 
 #logo a {
     display: block;

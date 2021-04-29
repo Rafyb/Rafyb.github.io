@@ -251,15 +251,17 @@ export default {
     });
   
     // return;
-  
+    
     if (d)
     {
+        
         this.cameras.main.scrollX -= 0.5;
   
         if (this.cameras.main.scrollX <= 0)
         {
             d = 0;
         }
+        
     }
     else
     {

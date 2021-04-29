@@ -1,12 +1,12 @@
 <template>
   <div class="experience">
-    <section id="experience">
-        <h1> Mon Expérience </h1>
-    </section>
 
-    <section id="experience_intro">
+        <h1> Mon Expérience </h1>
+
+
+
         <div class='block'>
-        <h1>Le Givre</h1>
+        <h2>Le Givre</h2>
 
         <p>J’ai eu l'occasion à plusieurs reprises de travailler au sein du groupe GIVRE ( Groupe pour l’Innovation, la Valorisation et la Réflexion sur les Enseignements ). 
         Le groupe GIVRE est installé à la Faculté de Pharmacie qui fait partie de l’Université de Lille. Elle compte environ 
@@ -22,7 +22,7 @@
         <br/>
         <timeline :timeline="timeline"/>
       </div>
-    </section>
+
   </div>
 </template>
 
@@ -49,7 +49,60 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.experience{
+    background-color: #ffffff;
+    height: max-content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
 
+.block{
+  width: 100%;
+}
+
+.experience>h1{
+    color: rgb(42, 42, 42);
+}
+
+  ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+	}
+
+	ul li{
+		display: inline;
+    margin:10px;
+	}
+
+@media screen and (min-width: 799px){
+  img{
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 799px){
+  img{
+    width: 80px;
+  }
+}
+
+  img{
+    border-radius: 10px;
+    filter: grayscale(100%);
+    margin-bottom:5px ;
+  }
+
+  img:hover{
+    filter: grayscale(0%);
+  }
+
+  h2{
+    margin-top:20px;
+    font-size: 1.3em;
+  }
+/*
   #experience{
     background-color: #04912e;
     color: white;
@@ -62,5 +115,5 @@ export default {
     padding:5%;
     padding-bottom:8% ;
   }
-
+*/
 </style>

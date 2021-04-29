@@ -14,12 +14,12 @@
           "text" : "Phaser 3" ,
           "class" : "label phaser"
         }],
-      "desc":"Dans la continuité de la création de supports de travail adaptatifs, des jeux à but pédagogique sont développés dans le cadre du projet PROFFIteROLE (PRatiques OFFIcinales et jeux de RÔLE). Ces jeux reposent sur une vue isométrique et sont développés avec le framework Phaser. Ce framework proposant un moteur de jeu web polyvalent, ne prend pas en charge la gestion de contenu 2D Isométrique. Pour cela, une surcouche de Phaser 2 a été développée et permet la création en interne de différents jeux qui reposent sur ce moteur. <br><br>Dans le cadre de mon travail au GIVRE, j'ai eu pour mission la refactorisation du code du moteur isométrique ainsi que celui des jeux développés via ce code, en corrigeant au passage les bugs. Après réflexion, nous avons décidé que ma version utiliserait Phaser 3 ( les prototypes réalisés auparavant étant sur Phaser 2). Ce choix m'a obligé à redévelopper certaines des fonctionnalités mais cela fut bénéfique puisque j'ai ainsi pu fournir un moteur plus dynamique, plus propre en matière de code et proposant de nouvelles solutions techniques. Par la suite, j'ai entamé la refactorisation des jeux.<br><br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/Carte2DMOSAIC_V2.png\" style=\"width :90%; margin:auto; display:block\" >",
+      "desc":"Dans la continuité de la création de supports de travail adaptatifs, des jeux à but pédagogique sont développés dans le cadre du projet PROFFIteROLE (PRatiques OFFIcinales et jeux de RÔLE). Ces jeux reposent sur une vue isométrique et sont développés avec le framework Phaser. Ce framework proposant un moteur de jeu web polyvalent, ne prend pas en charge la gestion de contenu 2D Isométrique. Pour cela, j'ai développé une surcouche de Phaser 3 qui permet la création en interne de différents jeux qui reposent sur ce moteur. <br><br>Dans le cadre de mon travail au GIVRE, j'ai eu pour mission la refactorisation du code du moteur isométrique ainsi que celui des jeux développés via ce code, en corrigeant au passage les bugs et créant un moteur plus dynamique que le premier prototype.<br><br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/Carte2DMOSAIC_V2.png\" style=\"width :90%; margin:auto; display:block\" >",
       "img":{
         "link" : "",
         "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/city_icone.png"
       },
-      "dateFirst" : "Juil\n2020" ,
+      "dateFirst" : "Déc\n2020" ,
       "dateSecond" : "Déc\n2019"
     },
     {

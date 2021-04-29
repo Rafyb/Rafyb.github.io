@@ -106,6 +106,7 @@ export default {
 
 .timeline ul {
     margin: 0;
+    margin-bottom: 20px;
     list-style: none;
     position: relative;
     color: rgb(83, 83, 83);

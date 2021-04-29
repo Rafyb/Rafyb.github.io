@@ -16,10 +16,11 @@ html{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0768a0;
+    background-color: #333333;
     width:100%;
     height: 100%;
 }
+
 
 body{
   margin:0;

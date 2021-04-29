@@ -6,10 +6,10 @@ export default {
         mode: Phaser.Scale.RESIZE,
         parent: 'jeu',              // element HTML dans lequel est injecté la scène
         width: '100',
-        height: 400,
+        height: 300,
     },
-    backgroundColor: '#ababab', // couleur de fond du jeu
-    transparent: false,         // définit s'il faut un fond transparent a la div du jeu
+    backgroundColor: '#0d1117', // couleur de fond du jeu
+    transparent: true,         // définit s'il faut un fond transparent a la div du jeu
     antialias: true,            // anticrénelage
 };
 

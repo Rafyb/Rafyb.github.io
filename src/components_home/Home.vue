@@ -8,11 +8,7 @@
         <h1>Pour commencer</h1>
 
         <p>Je m’appelle Raphael, j’ai 21 ans et je suis actuellement étudiant à L’université catholique de Lille en Licence 3 Sciences 
-        du numérique. Je suis passioné par le milieu de l’informatique et du visuel, plus précisément dans le Développement de Jeux video.</p>
-
-        <p>Mes passe-temps sont le vélo, la photographie et le dessin. Je dessine sur tablette graphique. Ce qui m’enthousiasme le plus dans le développement,
-        c’est de pouvoir concevoir quelque chose de concret que je puisse utiliser et ou qui puisse être utile à des personnes. J’aimerai créer des jeux qui 
-        fassent ressentir des émotions par leurs univers, l’ambiance de leurs décors. Mais aussi des jeux avec des gameplays innovants ou qui aident à l'apprentissage. 
+        du numérique. Je suis passioné par le milieu de l’informatique et du visuel, plus précisément dans le Développement de Jeux video.
         </p>
         </div>
     </section>

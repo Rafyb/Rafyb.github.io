@@ -4,6 +4,7 @@
             <a href="https://www.linkedin.com/in/rapha%C3%ABl-bauvin-b6911a151/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.artstation.com/raphalbauvin" class="github"><i class="fa fa-artstation"><img src="https://img.icons8.com/color/48/000000/artstation.png" style="height: 20px;"/></i></a>
             <a href="https://github.com/Rafyb" class="github"><i class="fa fa-github"></i></a>
+            <a href="https://rafyb.itch.io/" class="itch-io"><i class="fa fa-itch-io"><img :src="require('@/assets/itch-io.png')" style="height: 30px;"/></i></a>
     </div>
 </template>
 
@@ -29,8 +30,10 @@ export default {
 
 .icon-bar {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    right: 25px;
+    z-index: 20;
+    top: 0px;
+    display: flex;
 }
 
 .icon-bar a {
@@ -40,6 +43,7 @@ export default {
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
+    height: 32px;
 }
   
 .icon-bar a:hover {
@@ -74,5 +78,10 @@ export default {
 .github {
       background: #24292e;
       color: white;
+}
+
+.itch-io {
+      background:#24292e;
+      
 }
 </style>
