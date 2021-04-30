@@ -44,7 +44,7 @@
                 <student />
             </div>
             
-            <experience class="content-box"/>
+            <experience id="experience" class="content-box"/>
         </div>
       
     <!--<router-view/>-->
@@ -63,14 +63,15 @@ export default {
     },
         data:function(){
         return{
-            taille:"Agrandir"
+            taille:"Agrandir",
+            changed:false
         }
     },
     methods:{
       big(event){
           event.preventDefault();
           let doc = document.querySelector('#container-bottom');
-          if(this.taille=="Reduir")
+          if(this.changed)
           {
                 this.taille = "Agrandir";
                 doc.style.zIndex = 0;
@@ -81,7 +82,7 @@ export default {
           }
           else
           {
-              this.taille = "Reduir";
+              this.taille = "Réduire";
               doc.style.zIndex = 10;
               doc.style.width = "100%";
               doc.style.height = "100%";
@@ -89,6 +90,7 @@ export default {
               doc.style.top = "20px";
               doc.style.backgroundColor = "#36363677";
           }
+          this.changed = !this.changed;
 
           /*
           if(document.querySelector('#mydiv').style.display == "block") document.querySelector('#mydiv').style.display = "none";
@@ -116,6 +118,10 @@ export default {
     color: rgb(42, 42, 42);
 }
 
+#experience{
+    width : 80%;
+}
+
 @media screen and (min-width: 799px){
 
     .content-box{
@@ -133,7 +139,7 @@ export default {
 
     .content-box{
         display: block;
-        width: 80%;
+        width: 100%;
     }
 }
 

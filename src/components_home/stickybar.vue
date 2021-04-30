@@ -31,7 +31,7 @@ export default {
 .icon-bar {
     position: fixed;
     right: 25px;
-    z-index: 20;
+    z-index: 2;
     top: 0px;
     display: flex;
 }
@@ -43,7 +43,7 @@ export default {
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
-    height: 32px;
+    height: 22px;
 }
   
 .icon-bar a:hover {
