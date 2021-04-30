@@ -74,7 +74,6 @@ export default {
           if(this.changed)
           {
                 this.taille = "Agrandir";
-                doc.style.zIndex = 0;
                 doc.style.position = "relative";
                 doc.style.top = "-15px";
                 doc.style.height = "420px";
@@ -83,11 +82,10 @@ export default {
           else
           {
               this.taille = "Réduire";
-              doc.style.zIndex = 10;
               doc.style.width = "100%";
               doc.style.height = "100%";
-              doc.style.position = "absolute";
-              doc.style.top = "20px";
+              //doc.style.position = "absolute";
+              doc.style.top = "-500px";
               doc.style.backgroundColor = "#36363677";
           }
           this.changed = !this.changed;
@@ -157,6 +155,8 @@ export default {
     position:relative;
     top:-15px;
     height: 420px;
+    transition: width 1s, height 1.8s , top 2s;
+    z-index: 10;
 }
 #big{
     background-color: rgb(55, 125, 190);
