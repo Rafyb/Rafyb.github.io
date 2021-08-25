@@ -11,6 +11,7 @@ var config = {
     antialias: false,            
 };
 
+idxWindow = 0;
 scene = undefined;
 selectedFolder = undefined;
 
@@ -71,6 +72,12 @@ var sceneSetup = {
             `  Pointer World Pos : x:${Math.trunc(this.pointer.worldX)},y:${Math.trunc(this.pointer.worldY)}\n`
         );
         */
+
+        let dt = new Date();
+        let elements =  dt.toLocaleString().split(',');
+        let hours = elements[1].split(':');
+        let printer = hours[0]+':'+hours[1]+'\n'+elements[0]
+        document.getElementById("datetime").innerHTML = printer;
         
     }
 
@@ -81,5 +88,58 @@ window.onload = function () {
     // Ajout des scènes
     game.scene.add('Scene', sceneSetup );
     game.scene.start("Scene");
+}
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "-drag")) {
+    document.getElementById(elmnt.id + "-drag").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    if(e.target.className == "window-bar-close"){
+        close(e);
+        return false;
+    }
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+close = function(event) {
+    let idx = event.target.id;
+    let window = document.querySelector('#window'+idx);
+    
+    window.style.width = '0%';
+    window.style.height = '0%';
+
+    setTimeout(function(){
+        window.remove();
+    },100);
+    return false;
 }
 

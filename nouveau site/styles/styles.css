@@ -3,6 +3,8 @@ html, body {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    font-family: Arial,sans-serif;
+    font-size: 1em;
 }
 
 #bar {
@@ -12,6 +14,7 @@ html, body {
     height: 45px;
     background-color: #233742;
     z-index: 10;
+    display: flex;
 }
 
 .bar-element {
@@ -60,3 +63,77 @@ input:focus {
     width: 45px;
 }
 
+#datetime{
+    right: 12px;
+    position: fixed;
+    color: rgb(207, 206, 216);
+    text-align: center;
+    width: 80px;
+    padding-top: 8px;
+    font-size: 0.8em;
+}
+
+#right{
+    right: 0;
+    position: fixed;
+    width: 5px;
+    border-left: 0.2px solid rgb(207, 206, 216);
+}
+
+.window{
+    z-index: 8;
+    background-color: white;
+    width:0%;
+    position: fixed;
+    display: block;
+    top:10%;
+    left: 10%;
+    height: 0%;
+    border: 0.1px solid rgb(49, 51, 65);
+    box-shadow: 1px 1px 2px rgb(39, 39, 39);
+    transition: width 0.2s, height 0.2s;
+    visibility: hidden;
+}
+
+.window-bar{
+    position: relative;
+    top:0;
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    cursor: move;
+}
+
+.window-bar-icon{
+    width: 30px;
+    padding: 2px;
+}
+
+.window-bar-name{
+    width: 30px;
+    padding: 2px;
+    position: absolute;
+    left: 32px;
+    top: 5px;
+    font-size: 14px;
+    border-left: 0.2px solid rgb(207, 206, 216);
+    padding-left: 6px;
+    color: #233742;
+}
+
+.window-bar-close{
+    width: 26px;
+    padding: 3px 12px 5px;
+    position: absolute;
+    right: 0;
+    cursor: default;
+    background-color: #f0f0f0;
+    color: #233742;
+    font-size: 16px;
+    text-align: center;
+}
+
+.window-bar-close:hover{
+    background-color: red;
+    color: white;
+}

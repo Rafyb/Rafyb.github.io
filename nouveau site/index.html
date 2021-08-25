@@ -15,7 +15,11 @@
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
 
     <script src="src/shortcut.js"></script>
+    <script src="src/windowFolder.js"></script>
     <script src="src/main.js" defer></script>
+
+    
+
 
 
 </head>
@@ -27,6 +31,10 @@
         <!--Ici injection des composants du jeu Phaser-->
     </div>
 
+    <div id="windows">
+
+    </div>
+
     
     <div id="bar">
         <div class="bar-element" id="winbtn"><img src="assets/win10.png"></div>
@@ -34,15 +42,24 @@
             <img src="assets/search.png">
             <input type="text" placeholder="Search..">
         </div>
+        
+
+        <div class="bar-element">
+            <a href="https://github.com/Rafyb"  target="_blank"><img src="assets/logo-github.png"></a>
+        </div>
+        <div class="bar-element">
+            <a href="https://rafyb.itch.io/"  target="_blank"><img src="assets/itchio.png"></a>
+        </div>
         <div class="bar-element">
             <a href="https://www.linkedin.com/in/rapha%C3%ABl-bauvin-b6911a151/"  target="_blank"><img src="assets/linkedin.png"></a>
         </div>
-        <!--
-            
-            <a href="https://www.artstation.com/raphalbauvin" class="github"><i class="fa fa-artstation"><img src="https://img.icons8.com/color/48/000000/artstation.png" style="height: 20px;"/></i></a>
-            <a href="https://github.com/Rafyb" class="github"><i class="fa fa-github"></i></a>
-            <a href="https://rafyb.itch.io/" class="itch-io"><i class="fa fa-itch-io"><img :src="require('@/assets/itch-io.png')" style="height: 30px;"/></i></a>
-    </div>-->
+        <div class="bar-element">
+            <a href="https://www.artstation.com/raphalbauvin"  target="_blank"><img src="assets/arstation.png"></a>
+        </div>
+
+        <div class="bar-element" id="datetime"></div>
+        <div class="bar-element" id="right"></div>
+
     </div>
 </body>
 
