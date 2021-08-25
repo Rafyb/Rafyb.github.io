@@ -27,7 +27,6 @@ class WindowFolder {
     show()
     {
         this.window.style.visibility = "visible";
-        this.window.style.width = '70%';
-        this.window.style.height = '70%';
+        this.window.classList.add("opened");
     }
 }

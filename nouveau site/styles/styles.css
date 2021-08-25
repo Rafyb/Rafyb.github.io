@@ -95,6 +95,23 @@ input:focus {
     visibility: hidden;
 }
 
+.opened{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width : 440px) {
+    .opened{
+        width: 92%;
+        height: 87%;
+    }
+
+    .window{
+        top:3%;
+        left: 3%;
+    }
+}
+
 .window-bar{
     position: relative;
     top:0;

@@ -134,8 +134,7 @@ close = function(event) {
     let idx = event.target.id;
     let window = document.querySelector('#window'+idx);
     
-    window.style.width = '0%';
-    window.style.height = '0%';
+    window.classList.remove("opened");
 
     setTimeout(function(){
         window.remove();
