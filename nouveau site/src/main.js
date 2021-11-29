@@ -32,7 +32,7 @@ var sceneSetup = {
         //this.load.json('TSObject','data/TSObject.json'); 
         this.load.image('folder', 'assets/folder.png');
         this.load.image('file', 'assets/document.png');
-
+        this.load.json('timelineExp', 'json/timeline_exp.json');
 
     },
     create: function () 
@@ -40,13 +40,21 @@ var sceneSetup = {
         scene = this;
 
         //let tsJson = this.cache.json.get('TSObject');
-        let gameFolder = this.add.sprite(48, 38, 'folder');
-        let gameText = this.add.text(gameFolder.x - 22, gameFolder.y + 25 ,"Games",{ font: '14px Arial', fill: '#ffffff',shadow: {offsetX: 0.2,offsetY: 0.2,color: '#000', fill: true} });
-        let games = new Shortcut(gameFolder,gameText);
+        let aboutFile = this.add.sprite(50, 38, 'file');
+        let aboutText = this.add.text(aboutFile.x - 34, aboutFile.y + 25 ,"About me",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
+        let aboutme = new Shortcut(aboutFile,aboutText,"file");
 
-        let expFile = this.add.sprite(48, 123, 'file');
-        let expText = this.add.text(expFile.x - 38, expFile.y + 25 ,"Experiences",{ font: '14px Arial', fill: '#ffffff',shadow: {offsetX: 0.2,offsetY: 0.2,color: '#000', fill: true} });
-        let experiences = new Shortcut(expFile,expText);
+        let expFile = this.add.sprite(50, 123, 'file');
+        let expText = this.add.text(expFile.x - 43, expFile.y + 25 ,"Experiences",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
+        let experiences = new Shortcut(expFile,expText,"file");
+
+        let reaFolder = this.add.sprite(50, 208, 'folder');
+        let reaText = this.add.text(reaFolder.x - 43, reaFolder.y + 25 ,"Realisations",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
+        let realisations = new Shortcut(reaFolder,reaText,"folder");
+
+        let gameFolder = this.add.sprite(50, 293, 'folder');
+        let gameText = this.add.text(gameFolder.x - 28, gameFolder.y + 25 ,"Games",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
+        let games = new Shortcut(gameFolder,gameText,"folder");
 
         /*
         this.debug = this.add.text(5, 5,"",{ font: '16px Courier',backgroundColor: "rgba(0, 0, 0, 0.8)", fill: '#00ff00' });
@@ -89,6 +97,40 @@ window.onload = function () {
     game.scene.add('Scene', sceneSetup );
     game.scene.start("Scene");
 }
+
+let fullscreen = false;
+let elem = undefined;
+function switchFullscreen()
+{
+    elem = document;
+    if(fullscreen) closeFullscreen();
+    else openFullscreen();
+}
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+      fullscreen = true;
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+      fullscreen = true;
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+      fullscreen = true;
+    }
+    
+  }
+  function closeFullscreen() {
+    if (elem.exitFullscreen) {
+        elem.exitFullscreen();
+        fullscreen = false;
+    } else if (elem.webkitExitFullscreen) { /* Safari */
+        elem.webkitExitFullscreen();
+        fullscreen = false;
+    } else if (elem.msExitFullscreen) { /* IE11 */
+        elem.msExitFullscreen();
+        fullscreen = false;
+    }
+  }
 
 
 function dragElement(elmnt) {

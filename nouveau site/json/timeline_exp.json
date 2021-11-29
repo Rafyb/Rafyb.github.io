@@ -1,0 +1,82 @@
+{"timeline":[
+    {
+      "id":1,
+      "title":"Développement d'un moteur de jeu 2D isométrique",
+      "info":"Vacataire 1 an",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript",
+          "class" : "label javascript"
+        },
+        {
+          "link" : "http://phaser.io/",
+          "text" : "Phaser 3" ,
+          "class" : "label phaser"
+        }],
+      "desc":"Dans la continuité de la création de supports de travail adaptatifs, des jeux à but pédagogique sont développés dans le cadre du projet PROFFIteROLE (PRatiques OFFIcinales et jeux de RÔLE). Ces jeux reposent sur une vue isométrique et sont développés avec le framework Phaser. Ce framework proposant un moteur de jeu web polyvalent, ne prend pas en charge la gestion de contenu 2D Isométrique. Pour cela, j'ai développé une surcouche de Phaser 3 qui permet la création en interne de différents jeux qui reposent sur ce moteur. <br><br>Dans le cadre de mon travail au GIVRE, j'ai eu pour mission la refactorisation du code du moteur isométrique ainsi que celui des jeux développés via ce code, en corrigeant au passage les bugs et créant un moteur plus dynamique que le premier prototype.<br><br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/Carte2DMOSAIC_V2.png\" style=\"width :90%; margin:auto; display:block\" >",
+      "img":{
+        "link" : "",
+        "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/city_icone.png"
+      },
+      "dateFirst" : "Déc\n2020" ,
+      "dateSecond" : "Déc\n2019"
+    },
+    {
+      "id":2,
+      "title":"Développement d'un mode multijoueurs en ligne",
+      "info":"CDD 1 mois",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript" ,
+          "class" : "label javascript"
+        },
+        {
+          "link" : "",
+          "text" : "WebService" ,
+          "class" : "label webservice"
+        },
+        {
+          "link" : "http://phaser.io/",
+          "text" : "Phaser 2" ,
+          "class" : "label phaser"
+        }],
+      "desc":"Durant le mois de juillet, j'ai eu l'opportunité de rester travailler pour le groupe GIVRE en compagnie d'un autre stagiaire. Nous avons travaillé sur un jeu au fonctionnement de base semblable au jeu nommé <i>TrivialPursuit©</i>, sur lequel un troisième stagiaire nous a accompagné pour la partie graphique. Suite à mon stage, j'ai proposé une solution technique pour développer un mode multijoueur. Ma proposition a été retenue et c'est ainsi que j'ai été amené à développer les fonctionnalités en ligne et la logique derrière le fonctionnement du multijoueur.<br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/creation.png\" style=\"width :28%; margin:2%;   display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/rejoindre.png\" style=\"width :28%; margin:2%;  display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/partie.png\" style=\"width :28%; margin:2%;  display:inline-block\" >",   
+      "img":{
+        "link" : "",
+        "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/multijoueurs_icone.png"
+      },
+      "dateFirst" : "Aout\n2019" ,
+      "dateSecond" : "Juil\n2019"
+    },
+    {
+      "id":3,
+      "title":"Intégration de graphiques interactifs et responsives de visualisation de données sur Moodle" ,
+      "info":"Stage 3 mois",
+      "utils":
+        [{
+          "link" : "",
+          "text" : "JavaScript" ,
+          "class" : "label javascript"
+        },
+        {
+          "link" : "",
+          "text" : "WebService" ,
+          "class" : "label webservice"
+        },
+        {
+          "link" : "https://www.chartjs.org/",
+          "text" : "ChartJS" ,
+          "class" : "label chartjs"
+        }],
+      "desc":"Durant mon stage à la Faculté de Pharmacie, j’ai dû mettre en place des représentations graphiques de diverses informations extraites de la plateforme pédagogique Moodle. Ces graphiques viennent  s’appliquer dans une application sur mobile développée par le groupe GIVRE.<br><br>Pour cela j'ai appris à utiliser l'API ChartJS ainsi que l'utilisation des WebServices de l'API Moodle. Durant ce stage, j'ai été amené à rechercher des solutions techniques et à apporter mes idées sur les données pouvant être utiles aussi bien pour un enseignant que pour un étudiant. Ce fut aussi ma première occasion d'utiliser l'élément Canvas d'HTML 5 et de comprendre son fonctionnement. Ce stage fut une bonne première expérience en entreprise pour moi, il m’a permis d’améliorer mes compétences en informatique et d’acquérir les méthodes de travail en entreprise. <br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/bar.jpg\" style=\"width :39%; margin:5%; display:inline-block\" ><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/radar.jpg\" style=\"width :39%; margin:5%; display:inline-block\" >",       
+      "img":{
+        "link" : "",
+        "src" : "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/chartjs-logo.png"
+      },
+      "dateFirst" : "Juil\n2019" ,
+      "dateSecond" : "Avril\n2019"
+    }
+  ]
+}

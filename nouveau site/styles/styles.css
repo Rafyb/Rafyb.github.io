@@ -7,6 +7,20 @@ html, body {
     font-size: 1em;
 }
 
+p {
+    text-align: justify;
+}
+
+.label {
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
 #bar {
     position: fixed;
     bottom : 0;
@@ -41,7 +55,7 @@ input:focus {
 
 #winsearch{
     background-color: rgb(245, 245, 245);
-    width:200px;
+    width:220px;
 }
 
 @media (max-width : 440px) {
@@ -122,12 +136,12 @@ input:focus {
 }
 
 .window-bar-icon{
-    width: 30px;
+    width: 26px;
     padding: 2px;
 }
 
 .window-bar-name{
-    width: 30px;
+    width: 80px;
     padding: 2px;
     position: absolute;
     left: 32px;
@@ -151,6 +165,39 @@ input:focus {
 }
 
 .window-bar-close:hover{
-    background-color: red;
+    background-color: #ec4237;
     color: white;
 }
+
+.window-content{
+    width: 100%;
+    height: 94%;
+    position: relative;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+}
+
+.window-content .block{
+    padding: 2%;
+}
+
+#exp-title {
+    background: rgb(28, 119, 59);
+    width: 98%;
+    margin: 0;
+    color: white;
+    padding: 10px 1%;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.phaser {background-color: rgb(20, 108, 180);} /* Blue */
+.chartjs {background-color: #ff6384;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */
+.other {background-color: #e7e7e7; color: black;} /* Gray */
+.javascript{background-color: #f2dd2d; color:black;}
+.webservice{background-color: #f98113;}
+.vue{background-color: #41b883;}
+.socket{background-color: #e7e7e7; color: black;}
+.typescript{background-color: #187abf; }
+.java{background-color: #2f6db8;color: white;}

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'">
     <meta charset="utf-8" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <title>Raphael Bauvin</title>
@@ -14,10 +15,13 @@
 
     <!--import feuilles de style-->
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/timeline.css">
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
 
     <script src="src/shortcut.js"></script>
+    <script src="src/timeline.js"></script>
     <script src="src/windowFolder.js"></script>
+    <script src="src/windowFile.js"></script>
     <script src="src/main.js" defer></script>
 
     
@@ -36,10 +40,9 @@
     <div id="windows">
 
     </div>
-
     
     <div id="bar">
-        <div class="bar-element" id="winbtn"><img src="assets/win10.png"></div>
+        <a class="bar-element" id="winbtn" onclick="switchFullscreen()"><img src="assets/win10.png"></a>
         <div class="bar-element" id="winsearch">
             <img src="assets/search.png">
             <input type="text" placeholder="Search..">

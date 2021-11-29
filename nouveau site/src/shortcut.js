@@ -1,10 +1,11 @@
 class Shortcut{
 
-    constructor(sprite, text){
+    constructor(sprite, text, type){
         this.sprite = sprite;
         this.text = text;
+        this.type = type;
 
-        let zone = scene.add.rectangle(sprite.x, sprite.y + 10, 80, sprite.height + 20 + text.height,0x2196f3);
+        let zone = scene.add.rectangle(sprite.x, sprite.y + 10, 90, sprite.height + 20 + text.height,0x2196f3);
         this.zone = zone;
         this.zone.setDepth(-2);
         this.zone.setInteractive();
@@ -25,7 +26,8 @@ class Shortcut{
             if(selectedFolder != undefined){
 
                 if(selectedFolder == zone) {
-                    new WindowFolder(text._text).show();
+                    if(type == "folder") new WindowFolder(text._text).show();
+                    if(type == "file") new WindowFile(text._text).show();
                     opened = true;
                 }
 
