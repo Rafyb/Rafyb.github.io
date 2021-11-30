@@ -28,6 +28,7 @@ class Shortcut{
                 if(selectedFolder == zone) {
                     if(type == "folder") new WindowFolder(text._text).show();
                     if(type == "file") new WindowFile(text._text).show();
+                    if(type == "app") new WindowApp(text._text).show();
                     opened = true;
                 }
 
