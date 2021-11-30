@@ -57,7 +57,7 @@ var sceneSetup = {
         let games = new Shortcut(gameFolder,gameText,"folder");
 
         let vsCodeLogo = this.add.sprite(50, 375, 'app');
-        let vsCodeName = this.add.text(vsCodeLogo.x - 34, vsCodeLogo.y + 25 ,"VSCode.exe",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
+        let vsCodeName = this.add.text(vsCodeLogo.x - 43, vsCodeLogo.y + 25 ,"VSCode.exe",{ font: '16px Arial', fill: '#ffffff',shadow: {offsetX: 0.4,offsetY: 0.4,color: '#000', fill: true} });
         let vsCode = new Shortcut(vsCodeLogo,vsCodeName,"file");
 
         /*
