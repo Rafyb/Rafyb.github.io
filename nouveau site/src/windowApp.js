@@ -10,6 +10,7 @@ class WindowApp {
         <div class="window-bar" id="window${idxWindow}-drag">
             <img class="window-bar-icon" src="assets/logo-${name}.png">
             <div class="window-bar-name">${name}</div>
+            <a class="window-bar-resize" id="${idxWindow}" onclick="return resize();">&#9712;</a>
             <a class="window-bar-close" id="${idxWindow}" onclick="return close();">&#10006;</a>
         </div>
         <div class="window-content">${this.loadHTML(name)}</div>
@@ -35,7 +36,7 @@ class WindowApp {
 
     loadHTML(name)
     {
-        if(name == "VSCODE") return `<iframe width="100%" height="100%" src="https://vscode.dev/"></iframe>`;
+        if(name == "vscode") return `<iframe width="100%" height="100%" src="https://vscode.dev/"></iframe>`;
 
         return '';
     }

@@ -10,6 +10,7 @@ class WindowFile {
         <div class="window-bar" id="window${idxWindow}-drag">
             <img class="window-bar-icon" src="assets/document.png">
             <div class="window-bar-name">${name}</div>
+            <a class="window-bar-resize" id="${idxWindow}" onclick="return resize();">&#9712;</a>
             <a class="window-bar-close" id="${idxWindow}" onclick="return close();">&#10006;</a>
         </div>
         <div class="window-content">${this.loadHTML(name)}</div>
@@ -48,7 +49,21 @@ class WindowFile {
             ${loadTimeline('timelineExp')}
             </div>
             `;
-
+        if(name == "Formations") return `
+            <h1 id="student-title">Mes études</h1>
+            <div class="block">
+            <br/>
+            <br/>
+            ${loadTimeline('timelineEtude')}
+            </div>
+            `;
+        if(name == "About me") return `
+            
+            <div class="block">
+            Raphael Bauvin
+            Game & Web Developer
+            </div>
+            `;
         return '';
     }
 }

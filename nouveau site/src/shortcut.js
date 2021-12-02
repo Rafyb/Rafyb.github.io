@@ -12,8 +12,8 @@ class Shortcut{
         this.zone.alpha = 0.01;
 
         this.zone.on('pointerover',function(pointer){
-            console.log("ohver")
-            zone.alpha = 1;
+            //console.log("ohver")
+            zone.alpha = 0.6;
         })
 
         this.zone.on('pointerout',function(pointer){
@@ -28,11 +28,11 @@ class Shortcut{
                 if(selectedFolder == zone) {
                     if(type == "folder") new WindowFolder(text._text).show();
                     if(type == "file") new WindowFile(text._text).show();
-                    if(type == "app") new WindowApp(text._text).show();
+                    if(type == "app") new WindowApp(text._text.replace('.exe','')).show();
                     opened = true;
                 }
 
-                selectedFolder.setFillStyle(0x2196f3, 1);
+                selectedFolder.setFillStyle(0x2196f3, 0.6);
                 selectedFolder.alpha = 0.01;
                 selectedFolder = undefined;
                 if(opened) return;
