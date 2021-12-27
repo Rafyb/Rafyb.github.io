@@ -14,7 +14,7 @@
         "text" : "Phaser 3" ,
         "class" : "label phaser"
       }],
-    "desc":"Dans la continuité ...<br><br><img src=\"https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/Carte2DMOSAIC_V2.png\" style=\"width :39%; margin:5%; display:inline-block\" >",
+    "desc":"Dans la continuité ...<br><br><img src=\"https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/editeurCarte.PNG?raw=true\" style=\"width :45%; margin:2%; display:inline-block\" ><img src=\"https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/inspecteur.PNG?raw=true\" style=\"width :45%; margin:2%; display:inline-block\" >",
     "img":{
       "link" : "",
       "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/city_icone.png"
