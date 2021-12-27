@@ -325,8 +325,11 @@ resize = function(event) {
   {
     window.classList.remove("fullsize");
     window.classList.add("opened");
-    window.style.top = window.tmpTop ;
-    window.style.left = window.tmpLeft;
+    setTimeout(function(){
+      window.style.top = window.tmpTop ;
+      window.style.left = window.tmpLeft;
+    },50);
+    
   } else {
     window.classList.remove("opened");
     window.classList.add("fullsize");

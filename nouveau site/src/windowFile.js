@@ -58,9 +58,12 @@ class WindowFile {
             </div>
             `;
         if(name == "About me") return `
-            <div id="me-title"><img src="">
-            Raphael Bauvin
-            Game & Web Developer</div>
+            <div id="me-title">
+                <div class="bg"></div>
+                <img id="pp" src="https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/photo.jpeg?raw=true">
+                <div id="name">Raphael Bauvin</div>
+                <div id="job">Game & Web Developer</div>
+            </div>
             <div class="block">
             
             </div>
