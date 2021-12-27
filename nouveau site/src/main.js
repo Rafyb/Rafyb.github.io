@@ -129,7 +129,7 @@ var sceneSetup = {
         });
 
         let size = (1080/16)-8;
-        for(let y = 0; y < 4; y++)
+        for(let y = 0; y < 8; y++)
         {
           for(let x = 0; x < size; x++)
           {
