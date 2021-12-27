@@ -61,7 +61,6 @@ var sceneSetup = {
 
         let dt = new Date();
         let hours = dt.getHours();
-        console.log(hours);
         let sky;
         if(hours > 8 && hours < 20) sky = this.add.sprite(960, 540, 'sky-day');
         else sky = this.add.sprite(960, 540, 'sky-night');
@@ -269,7 +268,13 @@ function dragElement(elmnt) {
   function dragMouseDown(e) {
     e = e || window.event;
     if(e.target.className == "window-bar-close"){
+        console.log("CLOSE")
         close(e);
+        return false;
+    }
+    if(e.target.className == "window-bar-resize"){
+        console.log("RESIZE")
+        resize(e);
         return false;
     }
     e.preventDefault();
@@ -286,7 +291,8 @@ function dragElement(elmnt) {
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
     pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    if((elmnt.offsetTop - pos2)>= 0)  elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    else closeDragElement();
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
 
@@ -300,7 +306,7 @@ function dragElement(elmnt) {
 close = function(event) {
     let idx = event.target.id;
     let window = document.querySelector('#window'+idx);
-    
+
     window.classList.remove("opened");
 
     setTimeout(function(){
@@ -308,4 +314,29 @@ close = function(event) {
     },100);
     return false;
 }
+
+resize = function(event) {
+  let idx = event.target.id;
+  let window = document.querySelector('#window'+idx);
+  
+  console.log(window);
+
+  if(window.style.top == "0px" && window.style.left == "0px") 
+  {
+    window.classList.remove("fullsize");
+    window.classList.add("opened");
+    window.style.top = window.tmpTop ;
+    window.style.left = window.tmpLeft;
+  } else {
+    window.classList.remove("opened");
+    window.classList.add("fullsize");
+    window.tmpTop = window.style.top;
+    window.tmpLeft = window.style.left;
+    window.style.top = "0px";
+    window.style.left = "0px";
+  }
+
+  return false;
+}
+
 

@@ -10,8 +10,8 @@ class WindowApp {
         <div class="window-bar" id="window${idxWindow}-drag">
             <img class="window-bar-icon" src="assets/logo-${name}.png">
             <div class="window-bar-name">${name}</div>
-            <a class="window-bar-resize" id="${idxWindow}" onclick="return resize();">&#9712;</a>
-            <a class="window-bar-close" id="${idxWindow}" onclick="return close();">&#10006;</a>
+            <a class="window-bar-resize" id="${idxWindow}">&#9712;</a>
+            <a class="window-bar-close" id="${idxWindow}" >&#10006;</a>
         </div>
         <div class="window-content">${this.loadHTML(name)}</div>
         `;

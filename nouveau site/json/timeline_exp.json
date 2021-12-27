@@ -17,7 +17,7 @@
     "desc":"Ma mission pour ce stage a été la maintenance, la correction de bugs et le développement de nouvelles fonctionnalités pour le moteur de jeu développé en interne et basé sur le framework Phaser 3. J'ai eu l'occasion de développer des outils utiles à la maintenance tel qu'un éditeur de carte et un inspecteur \"In-Game\" pour modifier certaines variables de jeux comme les fréquences d'évènements. En plus de ces outils, j'ai automatisé les ajouts de contenus que j'ai documenté afin que des non-développeurs puisse ajouter du contenus. <br><br><img src=\"https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/editeurCarte.PNG?raw=true\" style=\"width :39%; margin:2%; display:inline-block\" ><img src=\"https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/inspecteur.PNG?raw=true\" style=\"width :48%; margin:2%; display:inline-block\" >",
     "img":{
       "link" : "",
-      "src": "https://raw.githubusercontent.com/Rafyb/Rafyb.github.io/master/src/assets/editor_icone.png"
+      "src": "https://github.com/Rafyb/Rafyb.github.io/blob/master/nouveau%20site/assets/editor_icone.png?raw=true"
     },
     "dateFirst" : "Sep\n2021" ,
     "dateSecond" : "Juin\n2021"

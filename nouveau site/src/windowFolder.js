@@ -11,8 +11,8 @@ class WindowFolder {
         <div class="window-bar" id="window${idxWindow}-drag">
             <img class="window-bar-icon" src="assets/folder.png">
             <div class="window-bar-name">${name}</div>
-            <a class="window-bar-resize" id="${idxWindow}" onclick="return resize();">&#9712;</a>
-            <a class="window-bar-close" id="${idxWindow}" onclick="return close();">&#10006;</a>
+            <a class="window-bar-resize" id="${idxWindow}" >&#9712;</a>
+            <a class="window-bar-close" id="${idxWindow}">&#10006;</a>
         </div>
         <div class="window-content">${this.loadHTML(name)}</div>
         `;
@@ -34,9 +34,49 @@ class WindowFolder {
 
     loadHTML(name)
     {
+        if(name == "Realisations") return `
+            <h2 style="
+                z-index:5; 
+                position:absolute;
+                left: 20px;
+                background-color:rgba(255, 255, 255, 0.8);
+                border-radius: 50px;
+                padding: 5px 20px;"
+            > Section en développement </h2>
+            <p style="
+                z-index:5; 
+                position:absolute;
+                left: 20px;
+                top: 50px;
+                background-color:rgba(255, 255, 255, 0.9);
+                border-radius: 50px;
+                padding: 5px 20px;"
+            > Retrouvez la liste de mes développements sur <a href="https://github.com/Rafyb">ma page GitHub</a> </p>
+            <img width="100%" src="https://github.com/Rafyb/Rafyb.github.io/blob/master/src/assets/workingOn.gif?raw=true">
+        `
         if(name == "Games") return `
             <div id="games-header">
                 <img src="assets/itchio-logo.png">
+                <h2 style="
+                z-index:5; 
+                position:absolute;
+                left: 95px;
+                top: 0px;
+                background-color:#f55456;
+                color:white;
+                border-radius: 50px;
+                padding: 5px 20px;"
+            > Section en développement </h2>
+            <p style="
+                z-index:5; 
+                position:absolute;
+                left: 95px;
+                top: 50px;
+                background-color:#f55456;
+                color:white;
+                border-radius: 50px;
+                padding: 5px 20px;"
+            > Retrouvez mes productions sur <a href="https://rafyb.itch.io/">ma page Itch.io</a> </p>
             </div>
             <div id="projects">
                 <div class="frame"><iframe frameborder="0" src="https://itch.io/embed/1312676?bg_color=000000&amp;fg_color=ffffff&amp;link_color=ff2020&amp;border_color=333333" width="552" height="167"><a href="https://rafyb.itch.io/billys-nightmare-vr">Billy's Nightmare VR by Raphael Bauvin, LeaLnn, FlorianAsencio, Milawy, Audrey Deman</a></iframe></div>
